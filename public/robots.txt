@@ -1,0 +1,6 @@
+User-agent: *
+
+Sitemap: /sitemap.xml
+/herobrine_is_lurking.html
+
+yywPkmGqlFtkm

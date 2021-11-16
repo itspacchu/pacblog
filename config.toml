@@ -1,0 +1,66 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Prashant's nook"
+theme = "anubis"
+paginate = 3
+
+disqusShortname = ""
+googleAnalytics = ""
+
+[author]
+name = "Prashant Nandipati"
+
+[params]
+author = "PrashantN"
+description = ""
+dateFormat = "2006-01-02"
+paginationSinglePost = true
+style = "auto"
+readMore = true
+
+# utteranc.es support
+utterancesRepo = ""  # mandatory
+utterancesTheme = "" # optional
+utterancesIssue = "" # optional
+utterancesLabel = "" # optional
+
+[[params.social]]
+id = "linkedin"
+url = "https://linkedin.com/user/itspacchu"
+
+[[params.social]]
+id = "github"
+url = "https://github.com/itspacchu"
+
+[menu]
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 1
+
+[[menu.main]]
+identifier = "projects"
+name = "Projects"
+url = "/projects/"
+weight = 2
+
+#[[menu.main]]
+#identifier = "tags"
+#name = "Tags"
+#url = "/tags/"
+#weight = 3
+
+[[menu.main]]
+name = "Posts"
+identifier = "posts"
+url = "/post/"
+weight = 3
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[markup.goldmark.renderer]
+unsafe = true

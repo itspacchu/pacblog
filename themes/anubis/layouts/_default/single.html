@@ -1,0 +1,40 @@
+{{ define "main" }}
+    {{ if .Menus }}
+        <nav class="post-navigation">
+        {{ range .Menus }}
+            <a href="{{ .URL | absLangURL }}" title="{{ .Title }}">{{ .Name }}</a>
+        {{ end }}
+        </nav>
+    {{ end }}
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                <h1 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}">{{ trim .Title  " " }}</h1>
+
+                {{ partial "post-language-switcher.html" . }}
+            </header>
+        </div>
+        <div class="content e-content">
+            {{ .Content }}
+        </div>
+        {{ partial "post-info.html" . }}
+    </article>
+
+    {{ if and (.Site.Params.paginationSinglePost) (ne .Type "page") }}
+        {{ partial "post-pagination.html" . }}
+    {{ end }}
+
+    {{ if .Site.DisqusShortname }}
+        {{ partial "disqus.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.UtterancesRepo }}
+        {{ partial "utterances.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.isso.enabled }}
+        {{ partial "isso.html" . }}
+    {{ end }}
+
+{{ end }}

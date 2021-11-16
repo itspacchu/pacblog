@@ -1,0 +1,6 @@
+[submodule "themes/anubis"]
+	path = themes/anubis
+	url = https://github.com/mitrichius/hugo-theme-anubis.git
+[submodule "private"]
+	path = private
+	url = https://github.com/itspacchu/0x45.in
