@@ -24,8 +24,7 @@ jobs:
 
   GenerateHtmlFiles:
     runs-on: self-hosted
-    needs: UpdateServer
-    needs: UpdateTheme
+    needs: UpdateServer UpdateTheme
     steps:
       - name: run the updater script
         run: cd /home/ubuntu/coding/pacblog && hugo
