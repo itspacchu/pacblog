@@ -85,9 +85,6 @@ This is an entry to ludam-dare gamejam.
 
 <iframe src="https://itch.io/embed/1011037?bg_color=000237&amp;fg_color=ffffff&amp;link_color=5bfaad&amp;border_color=323452" width="552" height="167" frameborder="0"><a href="https://pacchu.itch.io/torch-runner">Torch Runner by Pacchu</a></iframe>
 
-<a href='https://play.google.com/store/apps/details?id=com.pacchu.TorchRunner&hl=en&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
-<center>
-  
 ---
 </center>
 
@@ -102,7 +99,7 @@ This is an entry to ludam-dare gamejam.
 </center>
 
 
-### [College project portal & Result parser](https://enigmahubace.herokuapp.com/)
+#### [College project portal & Result parser](https://enigmahubace.herokuapp.com/)
 
 ![image](https://user-images.githubusercontent.com/37984032/158582242-f272934d-6012-4e93-9bc3-1f1eb8194aa7.png)
 ![image](https://user-images.githubusercontent.com/37984032/158582384-a1584297-3be7-4f45-a0a7-272519fcf61b.png)
