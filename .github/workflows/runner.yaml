@@ -21,12 +21,18 @@ jobs:
       - name: pull new changes from github
         run: cd /home/ubuntu/coding/pacblog && git pull origin
 
+
+  GenerateHtmlFiles:
+    runs-on: self-hosted
+    needs: UpdateServer
+    needs: UpdateTheme
+    steps:
       - name: run the updater script
         run: cd /home/ubuntu/coding/pacblog && hugo
 
   RestartNginx:
     runs-on: self-hosted
-    needs: UpdateServer
+    needs: GenerateHtmlFiles
 
     steps:
       - name: restart nginx server
