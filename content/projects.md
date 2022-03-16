@@ -4,7 +4,6 @@ date: 2022-01-14T08:13:29Z
 draft: false
 ---
 
-
 # Simulation
 
 #### - Lorenz attractor
