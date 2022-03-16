@@ -4,3 +4,6 @@
 [submodule "private"]
 	path = private
 	url = https://github.com/itspacchu/0x45.in
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
