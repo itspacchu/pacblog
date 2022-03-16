@@ -1,14 +1,14 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Prashant's nook"
-theme = "anubis"
+title = "Prashant's Nook"
+theme = "PaperMod"
 paginate = 3
 
 disqusShortname = ""
 googleAnalytics = ""
 
 [author]
-name = "Prashant Nandipati"
+name = "Prashant N"
 
 [params]
 author = "PrashantN"
@@ -45,12 +45,6 @@ identifier = "projects"
 name = "Projects"
 url = "/projects/"
 weight = 2
-
-#[[menu.main]]
-#identifier = "tags"
-#name = "Tags"
-#url = "/tags/"
-#weight = 3
 
 [[menu.main]]
 name = "Posts"
