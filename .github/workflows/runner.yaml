@@ -9,17 +9,17 @@ jobs:
 
     steps:
       - name: Pull Submodule Papermod
-        run: cd /home/ubuntu/coding/pacblog && git submodule update --init --recursive
+        run: cd /home/ubuntu/pacblog && git submodule update --init --recursive
 
   UpdateServer:
     runs-on: self-hosted
 
     steps:
       - name: stash local changes before 
-        run: cd /home/ubuntu/coding/pacblog && git stash
+        run: cd /home/ubuntu/pacblog && git stash
 
       - name: pull new changes from github
-        run: cd /home/ubuntu/coding/pacblog && git pull origin
+        run: cd /home/ubuntu/pacblog && git pull origin
 
 
   GenerateHtmlFiles:
@@ -27,7 +27,7 @@ jobs:
     needs: [UpdateServer,UpdateTheme]
     steps:
       - name: run the updater script
-        run: cd /home/ubuntu/coding/pacblog && hugo
+        run: cd /home/ubuntu/pacblog && hugo
 
   RestartNginx:
     runs-on: self-hosted
