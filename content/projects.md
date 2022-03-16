@@ -7,11 +7,13 @@ draft: false
 # Simulation
 
 #### - Lorenz attractor
+
 <center>
 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-uNLF6hfHA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
 #### - Blender Vector Fields
+
 <center>
 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tYsuAPHKqu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
@@ -21,6 +23,7 @@ draft: false
 # Games
 
 #### -  Worst Tank
+
 This is a collaborative entry to itch.io's weekly gamejam.
 
 ![worst-tank-pw](https://img.itch.zone/aW1hZ2UvNjU1OTg4LzM1Mjc3MzkucG5n/original/PVZDh5.png)
@@ -32,7 +35,7 @@ This is a collaborative entry to itch.io's weekly gamejam.
 ---
 </center>
 
-#### -  Torch Runner 
+#### -  Torch Runner
 
 This is an entry to ludam-dare gamejam.
 
@@ -43,7 +46,5 @@ This is an entry to ludam-dare gamejam.
 <center>
 ---
 </center>
-
-
 
 ``` to be added ```
