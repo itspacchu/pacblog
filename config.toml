@@ -18,6 +18,7 @@ paginationSinglePost = true
 style = "auto"
 readMore = true
 
+
 # utteranc.es support
 utterancesRepo = ""  # mandatory
 utterancesTheme = "" # optional
@@ -32,8 +33,66 @@ url = "https://linkedin.com/user/itspacchu"
 id = "github"
 url = "https://github.com/itspacchu"
 
-[menu]
+env = "production"
+description = "Prashant's Nook"
+author = "PrashantN"
+defaultTheme = "auto"
+ShowShareButtons = true
+ShowReadingTime = true
+displayFullLangName = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowToc = false
+images = [
+  "papermod-cover.png"
+]
 
+[params.profileMode]
+enabled = true
+title = "Prashant's Nook"
+subtitle = "Hello fellow humans, I see you have stumbled on my website <hr> Here are some places you can go to."
+imageUrl = "https://avatars.githubusercontent.com/u/37984032"
+imageTitle = "I see your internet is slow ...sad"
+
+[[params.profileMode.buttons]]
+name = "About"
+url = "about"
+
+[[params.profileMode.buttons]]
+name = "Projects"
+url = "projects"
+
+[[params.profileMode.buttons]]
+name = "Blog"
+url = "post"
+
+[[params.profileMode.buttons]]
+name = "Resume"
+url = "resume"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/itspacchu/"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/itspacchu"
+
+[[params.socialIcons]]
+name = "spotify"
+url = "https://open.spotify.com/user/pacchuprashant"
+
+[[params.socialIcons]]
+name = "instagram"
+url = "https://instagram.com/itspacchu"
+
+[[params.socialIcons]]
+name = "youtube"
+url = "https://www.youtube.com/channel/UCpVLV3pxEJHfUqz6FG199Uw"
+
+
+[menu]
 [[menu.main]]
 identifier = "about"
 name = "About"
@@ -58,3 +117,10 @@ tag = "tags"
 
 [markup.goldmark.renderer]
 unsafe = true
+
+[outputs]
+home = [
+  "HTML",
+  "RSS",
+  "JSON"
+]
