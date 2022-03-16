@@ -11,9 +11,6 @@ jobs:
       - name: Pull Submodule Papermod
         run: cd /home/ubuntu/coding/pacblog && git submodule update --init --recursive
 
-      - name: Update theme from papermod
-        run: cd /home/ubuntu/coding/pacblog/themes/PaperMod && git pull origin
-
   UpdateServer:
     runs-on: self-hosted
 
@@ -29,6 +26,7 @@ jobs:
 
   RestartNginx:
     runs-on: self-hosted
+    needs: UpdateServer
 
     steps:
       - name: restart nginx server
