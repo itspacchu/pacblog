@@ -6,12 +6,9 @@ draft: false
 
 # Simulation
 
-#### - Rocket Stability Controller using PID
+#### [Rocket Stablity Controller](https://0x45.in/projects/webrun/godotrocket/rocketpid.html)
 
 Using PID Controller for rocket stability.
-
-### [Rocket PID](https://0x45.in/projects/webrun/godotrocket/rocketpid.html)
-
 ![image](https://user-images.githubusercontent.com/37984032/158578453-1386a7ca-5408-45c6-9447-8d9e3743a96f.png)
 
 <center>
@@ -22,11 +19,9 @@ Using PID Controller for rocket stability.
 ---
 </center>
 
-#### - Linear Antenna Phase Shader
+#### [Linear Antenna Phase Shader](https://0x45.in/projects/webrun/antennaphase/AntennaPhase.html)
 
 Phased Antenna Direction modelling in a linear antenna array.
-
-### [Linear Antenna](https://0x45.in/projects/webrun/antennaphase/AntennaPhase.html)
 
 ![image](https://user-images.githubusercontent.com/37984032/158578855-891f5845-b424-4b5a-b4f5-af4f2fd25393.png)
 
@@ -35,10 +30,9 @@ Phased Antenna Direction modelling in a linear antenna array.
 ---
 </center>
 
-#### - Newton Fractal Shader
+#### [Newton Fractal Shader](https://0x45.in/projects/webrun/newtonfractal/NewtonShader.html)
 Solving complex cubic polynomial using newton raphson method
 
-### [Newton Fractal](https://0x45.in/projects/webrun/newtonfractal/NewtonShader.html)
 
 ![image](https://user-images.githubusercontent.com/37984032/158579601-4f6c210e-aa7b-4f29-ae8c-d0e6d9960f9d.png)
 
@@ -47,7 +41,7 @@ Solving complex cubic polynomial using newton raphson method
 ---
 </center>
 
-#### - Lorenz attractor
+#### Lorenz attractor
 
 <center>
 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-uNLF6hfHA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -57,7 +51,7 @@ Solving complex cubic polynomial using newton raphson method
 ---
 </center>
 
-#### - Blender Vector Fields
+#### Blender Vector Fields
 
 <center>
 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tYsuAPHKqu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -69,7 +63,7 @@ Solving complex cubic polynomial using newton raphson method
 
 # Games
 
-#### -  Worst Tank
+#### [Worst Tank](https://pacchu.itch.io/worsttank)
 
 This is a collaborative entry to itch.io's weekly gamejam.
 
@@ -83,7 +77,7 @@ This is a collaborative entry to itch.io's weekly gamejam.
 ---
 </center>
 
-#### -  Torch Runner
+#### [Torch Runner](https://pacchu.itch.io/torch-runner)
 
 This is an entry to ludam-dare gamejam.
 
@@ -91,15 +85,12 @@ This is an entry to ludam-dare gamejam.
 
 <iframe src="https://itch.io/embed/1011037?bg_color=000237&amp;fg_color=ffffff&amp;link_color=5bfaad&amp;border_color=323452" width="552" height="167" frameborder="0"><a href="https://pacchu.itch.io/torch-runner">Torch Runner by Pacchu</a></iframe>
 
-<center>
 ---
 </center>
 
 # Web dev
 
-#### - Fourier Epicycle Drawing (~ inspired from 3b1b and Coding train )
-
-### [Fourier Epicycle](https://0x45.in/projects/webrun/fourierCirclesRE/index.html)
+#### [Fourier Epicycle Drawing (~ inspired from 3b1b and Coding train )](https://0x45.in/projects/webrun/fourierCirclesRE/index.html)
 
 ![fcircles](https://user-images.githubusercontent.com/37984032/123756595-b53bd700-d8da-11eb-98ff-64143874c02f.gif)
 
@@ -108,9 +99,7 @@ This is an entry to ludam-dare gamejam.
 </center>
 
 
-#### - College project portal & Result parser
-
-### [EnigmaCodex](https://enigmahubace.herokuapp.com/)
+#### [College project portal & Result parser](https://enigmahubace.herokuapp.com/)
 
 ![image](https://user-images.githubusercontent.com/37984032/158582242-f272934d-6012-4e93-9bc3-1f1eb8194aa7.png)
 ![image](https://user-images.githubusercontent.com/37984032/158582384-a1584297-3be7-4f45-a0a7-272519fcf61b.png)
