@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Prashant&#39;s Nook</title>
+    <link>/</link>
+    <description>Recent content on Prashant&#39;s Nook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Jan 2022 03:12:07 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projects</title>
+      <link>/projects/</link>
+      <pubDate>Fri, 14 Jan 2022 08:13:29 +0000</pubDate>
+      
+      <guid>/projects/</guid>
+      <description>Simulation - Rocket Stability Controller using PID Using PID Controller for rocket stability.
+Rocket PID     ---  - Linear Antenna Phase Shader Phased Antenna Direction modelling in a linear antenna array.
+Linear Antenna  ---  - Newton Fractal Shader Solving complex cubic polynomial using newton raphson method
+Newton Fractal  ---  - Lorenz attractor     ---  - Blender Vector Fields     ---  Games - Worst Tank This is a collaborative entry to itch.</description>
+    </item>
+    
+    <item>
+      <title>First Contact</title>
+      <link>/post/first-contact/</link>
+      <pubDate>Sun, 09 Jan 2022 03:12:07 +0530</pubDate>
+      
+      <guid>/post/first-contact/</guid>
+      <description>First contact First contact is essential for peace keeping between races so here&amp;rsquo;s my first contact. Hello I am Prashant.</description>
+    </item>
+    
+    <item>
+      <title>Behind the person</title>
+      <link>/about/</link>
+      <pubDate>Sat, 15 Sep 2001 02:49:07 +0530</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Greeting humans!
+ I am Prashant, an undergraduate Electronics and Communication Student.
+I have a keen interest in Mathematical modelling, Robotics and building Electronic contraptions. Building visualisations and interactive systems for the concepts been taught and watching them in action is the most fun part of building things.
+Interests  Programatical Mathematics. Electronics and Robotics. GameJams. Cycling. Badminton.  Interesting Stuff I like   Essense of Algebra
+  Book of shaders</description>
+    </item>
+    
+    <item>
+      <title># Other Links</title>
+      <link>/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/links/</guid>
+      <description>  LinkedIn Github Reddit Discord (pacchu#4112) Spotify Lastfm Instagram Twitter </description>
+    </item>
+    
+    
+  </channel>
+</rss>
