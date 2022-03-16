@@ -6,10 +6,55 @@ draft: false
 
 # Simulation
 
+#### - Rocket Stability Controller using PID
+
+Using PID Controller for rocket stability.
+
+### [Rocket PID](https://0x45.in/projects/webrun/godotrocket/rocketpid.html)
+
+![image](https://user-images.githubusercontent.com/37984032/158578453-1386a7ca-5408-45c6-9447-8d9e3743a96f.png)
+
+<center>
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ybsFcmRora0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+<center>
+---
+</center>
+
+#### - Linear Antenna Phase Shader
+
+Phased Antenna Direction modelling in a linear antenna array.
+
+### [Linear Antenna](https://0x45.in/projects/webrun/antennaphase/AntennaPhase.html)
+
+![image](https://user-images.githubusercontent.com/37984032/158578855-891f5845-b424-4b5a-b4f5-af4f2fd25393.png)
+
+
+<center>
+---
+</center>
+
+#### - Newton Fractal Shader
+Solving complex cubic polynomial using newton raphson method
+
+### [Newton Fractal](https://0x45.in/projects/webrun/newtonfractal/NewtonShader.html)
+
+![image](https://user-images.githubusercontent.com/37984032/158579601-4f6c210e-aa7b-4f29-ae8c-d0e6d9960f9d.png)
+
+
+<center>
+---
+</center>
+
 #### - Lorenz attractor
 
 <center>
 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-uNLF6hfHA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+<center>
+---
 </center>
 
 #### - Blender Vector Fields
@@ -18,7 +63,9 @@ draft: false
 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tYsuAPHKqu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
-<hr>
+<center>
+---
+</center>
 
 # Games
 
@@ -31,6 +78,7 @@ This is a collaborative entry to itch.io's weekly gamejam.
 <iframe src="https://itch.io/embed/655988?linkback=true&amp;border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;border_color=363636" width="560" height="175" frameborder="0"><a href="https://pacchu.itch.io/worsttank">WorstTank {Beta} by Pacchu, brrrr</a></iframe>
 
 <br>
+
 <center>
 ---
 </center>
@@ -47,4 +95,26 @@ This is an entry to ludam-dare gamejam.
 ---
 </center>
 
-``` to be added ```
+# Web dev
+
+#### - Fourier Epicycle Drawing (~ inspired from 3b1b and Coding train )
+
+### [Fourier Epicycle](https://0x45.in/projects/webrun/fourierCirclesRE/index.html)
+
+![fcircles](https://user-images.githubusercontent.com/37984032/123756595-b53bd700-d8da-11eb-98ff-64143874c02f.gif)
+
+<center>
+---
+</center>
+
+
+#### - College project portal & Result parser
+
+### [EnigmaCodex](https://enigmahubace.herokuapp.com/)
+
+![image](https://user-images.githubusercontent.com/37984032/158582242-f272934d-6012-4e93-9bc3-1f1eb8194aa7.png)
+![image](https://user-images.githubusercontent.com/37984032/158582384-a1584297-3be7-4f45-a0a7-272519fcf61b.png)
+
+<center>
+---
+</center>
