@@ -10,26 +10,32 @@ draft: false
 
 Using PID Controller for rocket stability.
 
+### [Rocket PID](https://0x45.in/projects/webrun/godotrocket/rocketpid.html)
+
 ![image](https://user-images.githubusercontent.com/37984032/158578453-1386a7ca-5408-45c6-9447-8d9e3743a96f.png)
 
-[Rocket PID](https://0x45.in/projects/webrun/godotrocket/rocketpid.html)
+
 
 
 #### - Linear Antenna Phase Shader
 
 Phased Antenna Direction modelling in a linear antenna array.
 
+### [Linear Antenna](https://0x45.in/projects/webrun/antennaphase/AntennaPhase.html)
+
 ![image](https://user-images.githubusercontent.com/37984032/158578855-891f5845-b424-4b5a-b4f5-af4f2fd25393.png)
 
-[Linear Antenna](https://0x45.in/projects/webrun/antennaphase/AntennaPhase.html)
+
 
 
 #### - Newton Fractal Shader
 Solving complex cubic polynomial using newton raphson method
 
+### [Newton Fractal](https://0x45.in/projects/webrun/newtonfractal/NewtonShader.html)
+
 ![image](https://user-images.githubusercontent.com/37984032/158579601-4f6c210e-aa7b-4f29-ae8c-d0e6d9960f9d.png)
 
-[Newton Fractal](https://0x45.in/projects/webrun/newtonfractal/NewtonShader.html)
+
 
 
 #### - Lorenz attractor
@@ -78,7 +84,9 @@ This is an entry to ludam-dare gamejam.
 
 #### - Fourier Epicycle Drawing (~ inspired from 3b1b and Coding train )
 
+### [Fourier Epicycle](https://0x45.in/projects/webrun/fourierCirclesRE/index.html)
+
 ![fcircles](https://user-images.githubusercontent.com/37984032/123756595-b53bd700-d8da-11eb-98ff-64143874c02f.gif)
 
-[Fourier Epicycle](https://0x45.in/projects/webrun/fourierCirclesRE/index.html)
+
 
