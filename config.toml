@@ -69,7 +69,7 @@ url = "post"
 
 [[params.profileMode.buttons]]
 name = "Resume"
-url = "resume"
+url = "resume.pdf"
 
 [[params.socialIcons]]
 name = "linkedin"
