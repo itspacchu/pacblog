@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Update theme from papermod
-        run: cd /home/ubuntu/coding/pacblog/themes/PaperMod && git pull origin master
+        run: cd /home/ubuntu/coding/pacblog/themes/PaperMod && git pull origin
 
   UpdateServer:
     runs-on: self-hosted
@@ -19,7 +19,7 @@ jobs:
         run: cd /home/ubuntu/coding/pacblog && git stash
 
       - name: pull new changes from github
-        run: cd /home/ubuntu/coding/pacblog && git pull origin main
+        run: cd /home/ubuntu/coding/pacblog && git pull origin
 
       - name: run the updater script
         run: cd /home/ubuntu/coding/pacblog && hugo
