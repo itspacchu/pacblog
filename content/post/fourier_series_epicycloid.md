@@ -6,9 +6,11 @@ draft: false
 
 ++++ This post is mirrored from [here](https://vonneumannscientia.pythonanywhere.com/post/23/)
 
-So yeah this is simple but hard at the same time due to how flexible fourier series is.
+Fourier Series is a mathematical technique that is used to approximate the shape of a curve by decomposing signal into frequency components.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\sum&space;c_n&space;e^{-\tau&space;n&space;f&space;t}&space;=&space;...&space;c_{-1}&space;e^{1&space;\tau&space;f&space;t}&space;&plus;&space;c_{0}*1&space;&plus;&space;c_{1}&space;e^{-1&space;\tau&space;f&space;t}&space;..." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sum&space;c_n&space;e^{-\tau&space;n&space;f&space;t}&space;=&space;...&space;c_{-1}&space;e^{1&space;\tau&space;f&space;t}&space;&plus;&space;c_{0}*1&space;&plus;&space;c_{1}&space;e^{-1&space;\tau&space;f&space;t}&space;..." title="\sum c_n e^{-\tau n f t} = ... c_{-1} e^{1 \tau f t} + c_{0}*1 + c_{1} e^{-1 \tau f t} ..." /></a>
+
+``` Complex Fourier Series ```
+<img src="https://cdn.discordapp.com/attachments/954771568381296710/954772861212561418/749975627633000520.png"/>
 <br>
 <br>
 <b>Attempt #1 :</b> Havent done much except trying to pick out a backend to work this thing on ... thought of using <b>Cinema4D</b> but due to lack of its precision on floating point integers coudn't get it to work with my initial values
@@ -16,10 +18,7 @@ So yeah this is simple but hard at the same time due to how flexible fourier ser
 <br>
 <iframe src="https://pastebin.com/embed_iframe/WdTE7BAX" style="border:none;width:100%"></iframe>
 <br>
-i'll post an update if get anything else
-<br>
-<br>
-And here's me messing with Cinema4D and some random <a href="https://www.codecogs.com/eqnedit.php?latex=C_n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?C_n" title="C_n" /></a> <a href="https://www.codecogs.com/eqnedit.php?latex=n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?n" title="n" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\emph{Phase()}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\emph{Phase()}" title="\emph{Phase()}" /></a> Values
+And here's me messing with Cinema4D with rotating circles.
 <br><br>
 <img src="http://vonneumannscientia.pythonanywhere.com/media/comment_img/ezgif-3-0c70e3c02b78.gif" width=640px height=320px>
 <br>
