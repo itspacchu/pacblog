@@ -15,8 +15,9 @@ Lorentz attractor is a differential equation used to simulate 2D fluid flow main
 <p> Lorentz attractor is governed by 3 differential equation on each of its axis </p>
 <h3>Governed by 3 differential equations</h3>
 <br>
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7928004d58943529a7be774575a62ca436a82a7f" width=auto height=auto>
-<br>
+<img src="https://cdn.discordapp.com/attachments/954771568381296710/954773826577768488/749975627633000520.png" width=50%>
+<br><img src="https://cdn.discordapp.com/attachments/954771568381296710/954773868474667068/749975627633000520.png" width=50%>
+<br><img src="https://cdn.discordapp.com/attachments/954771568381296710/954774085873840158/749975627633000520.png" width=50%>
 <br>
 These equations induvially control the way the fluid flows in a corresponding domain.
 
