@@ -6,7 +6,7 @@ draft: false
 
 # Simulation
 
-#### [Rocket Stablity Controller](https://0x45.in/projects/webrun/godotrocket/rocketpid.html)
+#### [Rocket Stablity Controller](/post/pid-rocket-stability/)
 
 Using PID Controller for rocket stability.
 ![image](https://user-images.githubusercontent.com/37984032/158578453-1386a7ca-5408-45c6-9447-8d9e3743a96f.png)
