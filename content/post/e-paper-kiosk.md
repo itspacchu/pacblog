@@ -84,11 +84,95 @@ So if you look at the spectrum you would see something like this.
 
 Similar to frequency domain colors appearing as something different we have a method to show grayscale values in spatial domain.
 
-## Floyd Steinberg Dithering
+## Dithering
+
+dithering an image is a way to make an imahe appear higher fidelity than it actually is.
+
+So let's consider a simple scenario, we have 3 colors
+```python
+BLACK = (0,0,0)
+GRAY = (0.5,0.5,0.5)
+WHITE = (1,1,1)
+
+colors = [BLACK,GRAY,WHITE]
+```
+If we directly apply the colors without any gradient it would look very discrete (Left Sphere), While if we add a bit of noise while interpolating between the colors we can get a pseudo smooth appearance (Right Sphere).
+
+
+![renderdither](https://user-images.githubusercontent.com/37984032/187075232-43e41aa7-d069-4fb8-b806-7cd6681f18e3.png)
+
+### Floyd-Steinberg Dithering
 
 [![image](https://user-images.githubusercontent.com/37984032/187065866-3b94f12d-a0ca-4aba-a2ec-262c0807f03e.png)](https://en.wikipedia.org/wiki/Floyd%E2%80%93Steinberg_dithering)
-
  
+This is a very cool dithering algorithm used in GIFs and many low fidelity formats to preserve detail lossy.
+
+---
+
+I was originally planned to write my own Dithering algorithm to generate dithered bitmap (bmp) format for the Waveshare API but found out python's pillow _Python Imaging Library_'s 
+
+```python
+Image.convert('1')
+```
+
+method already does basic dithering which covers my need.
+
+So taking a screenshot of my [website](https://0x45.in) and passing it through the dithering algorithm we have
+
+![thebeauty](https://user-images.githubusercontent.com/37984032/187064034-a15e3b09-87d4-44ec-bcc4-29ded65cc8a5.png)
+
+Even the render of my head was represented really well using dithering.
+
+Now since this current e-ink panel supports red pigment as well I tried doing some basic point processing to fetch red values to dither and represent as well and it turned out kinda weird so we decided to completely drop using the red pigment, But it looked really cool I say it.
+
+```python
+webpage = Image.open("screenshot.png").convert("RGB").transpose(Image.ROTATE_90)
+webpage = change_contrast(webpage,100)
+#r = webpage.split()[0] Do the point processing for red
+#r.point( lambda p: 255 - (10*p) if ((p >= 200) and (p < 240)) else 255 ).convert("1").save("screenshot_r.bmp")
+webpage.convert("1").save("screenshot_b.bmp")
+```
+---
+
+![image](https://user-images.githubusercontent.com/37984032/187075516-5f8c2c27-4bdf-4ce9-ab77-a2c03471e40c.png)
+
+![image](https://user-images.githubusercontent.com/37984032/187075567-d2561fab-942e-4c96-987c-6484c45e176f.png)
+
+
+``` these images are manually segmented into red and black parts ```
+
+---
+
+## Web rendering?
+
+So the people here wanted the thing to be connected to WiFi so it can fetch data from [onem2m server]() of iiith. Before my plan was to use opencv or pillow itself to completly render graphs and map and export as an image, but there was a problem.
+
+If someone want's to update the layout or want to completly change how it looks... they have to redo the whole image generation part again, So why not go the Electron route and just render a webpage, this way it's more powerful as it uses HTML+CSS to markup the layout.
+
+By calling chrome headless mode
+```python
+subprocess.run(['chromium','--headless','--disable-gpu','--screenshot','--window-size=480,800',url])
+```
+It was possible to export a screenshot of the webpage which can be easily converted and displayed.
+
+## Enclosure Design
+
+We wanted to place the whole e-ink panel inside the metal chassy of the lamp post so I had to come up with a way to put the panel and all the electronics inside the post.
+
+The first iteration of design included a basic box where the display can easily slide through... yea sliding through is a very very stupid idea.
+
+The display broke as it was sliding inside and that was a very expensive mistake! ~~(not gonna elaborate on how much I thought I was gonna be fired! )~~
+
+![image](https://user-images.githubusercontent.com/37984032/187075841-e8d2b4a1-4f9c-4cfb-a0a5-1e27122749dc.png)
+
+Here's a new design which is yet to be printed.
+
+![image](https://user-images.githubusercontent.com/37984032/187075943-89e56e54-8a8e-4d3a-a17e-94be41b67768.png)
+
+
+(in progress)
+
+
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
