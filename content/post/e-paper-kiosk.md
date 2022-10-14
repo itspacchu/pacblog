@@ -169,9 +169,31 @@ Here's a new design which is yet to be printed.
 
 ![image](https://user-images.githubusercontent.com/37984032/187075943-89e56e54-8a8e-4d3a-a17e-94be41b67768.png)
 
+## Final Assembly
 
-(in progress)
+So after designing a whole enclosure this is how it finally fits in all together. We were extremely on time crunch as people from Wi-SUN were coming in a week for evaluation, After giving it a finishing color coat it started giving the look of being profesionally made.
 
+![image](https://cdn.discordapp.com/attachments/756467788398198894/1047156877592633344/unknown.png)
+
+At this point I wanted to put everything in a docker for easy deployment incase of issues with raspberry pi or broken SD card ( I have accidentally broken some while handling this 3D print ), But again due to the time crunch I've decided just to pile up on systemd scripts.
+
+For automating simple updates I've worked with github actions to create a self runner to auto update the bot.
+
+![image](https://cdn.discordapp.com/attachments/756467788398198894/1047158589149687829/image.png)
+
+Which did save alot of time by not manually ssh-ing into the pi. The worst part about the lamp enclosure is ... it's made of metal, essentially making it a faraday cage.
+
+A Faraday cage is a device which blocks external electromagnetic signals from passing through ... Since WiFi is part of the electromagnetic spectrum, It was essentially making the communication with the main router absurdly slow. Also the fact that the only way the WiFi signal can even reach the lamp was through a window.
+
+![image](https://cdn.discordapp.com/attachments/756467788398198894/1047161607567982624/image.png)
+
+I found out about the WiFi issue on the day the Wi-SUN people are supposed to come, [Dr Aftab](https://www.iiit.ac.in/people/faculty/aftab.hussain/) suggested we remove a small metal panel to allow WiFi in and well it worked for the demo.
+
+Since we were working with this lamp during the phase of KETI's hackathon, we decided to present this alongside our main hackathon project.
+
+<iframe width=100% src="https://www.youtube.com/embed/zbXav_wcGhQ" title="KETI OneM2M Hackathon project submission | #TeamAthena" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Overall it was really a fun project to work with.
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
