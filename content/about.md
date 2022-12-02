@@ -4,13 +4,15 @@ date: 2001-09-15T02:49:07+05:30
 draft: false
 tag: "about"
 ---
+
+
 ![profileboi](https://avatars.githubusercontent.com/u/37984032)
 
 ## <div title="and other hyper intelligent species">**Greeting humans!**</div><br>
 I am Prashant, an undergraduate *Electronics and Communication* Student.<br>
 I have a keen interest in Mathematical modelling, Robotics and building Electronic contraptions.
 <br>Building visualisations and interactive systems for the concepts been taught and watching them in action is the most fun part of building things.
-
+              
 ### Interests
 
 - Programatical Mathematics.
@@ -31,3 +33,5 @@ I have a keen interest in Mathematical modelling, Robotics and building Electron
 ### Music
 
 ![music-is-beautiful](https://www.tapmusic.net/collage.php?user=itspacchu&type=6month&size=5x5&caption=true&playcount=false)
+
+
