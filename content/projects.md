@@ -26,7 +26,7 @@ Using PID Controller for rocket stability.
 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ybsFcmRora0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
-A web playable version of this project is available [Here](https://0x45.in/projects/webrun/godotrocket/rocketpid.html)
+A web playable version of this project is available [Here](/projects/webrun/godotrocket/rocketpid.html)
 
 <center>
 ---
@@ -44,7 +44,7 @@ Visit Github to invite the bot to your server [Here](https://github.com/itspacch
 </center>
 
 
-### [Linear Antenna Phase Shader](https://0x45.in/projects/webrun/antennaphase/AntennaPhase.html)
+### [Linear Antenna Phase Shader](/projects/webrun/antennaphase/AntennaPhase.html)
 
 Phased Antenna Direction modelling in a linear antenna array.
 
@@ -55,7 +55,7 @@ Phased Antenna Direction modelling in a linear antenna array.
 ---
 </center>
 
-### [Newton Fractal Shader](https://0x45.in/projects/webrun/newtonfractal/NewtonShader.html)
+### [Newton Fractal Shader](/projects/webrun/newtonfractal/NewtonShader.html)
 Solving complex cubic polynomial using newton raphson method
 
 
@@ -115,7 +115,7 @@ This is an entry to ludam-dare gamejam.
 
 # Web dev
 
-### [Fourier Epicycle Drawing (~ inspired from 3b1b and Coding train )](https://0x45.in/projects/webrun/fourierCirclesRE/index.html)
+### [Fourier Epicycle Drawing (~ inspired from 3b1b and Coding train )](/projects/webrun/fourierCirclesRE/index.html)
 
 ![fcircles](https://user-images.githubusercontent.com/37984032/123756595-b53bd700-d8da-11eb-98ff-64143874c02f.gif)
 
