@@ -2,4 +2,4 @@
 
 A bloggy website to put all the work 
 
-# [ Prashant's Nook ](https://0x45.in/projects)
+# [ Prashant's Nook ](https://prashantnook.in/projects)
