@@ -2,7 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Prashant's Nook"
 theme = "PaperMod"
-paginate = 3
+paginate = 4
 
 disqusShortname = ""
 googleAnalytics = ""
@@ -51,9 +51,9 @@ images = [
 [params.profileMode]
 enabled = true
 title = "Prashant's Nook"
-subtitle = "Hello fellow humans, I see you have stumbled on my website <hr> Here are some places you can go to."
+subtitle = "Hello fellow eartlings, I see you have stumbled on my website <hr> Here are some places you can go to."
 imageUrl = "https://avatars.githubusercontent.com/u/37984032"
-imageTitle = "I see your internet is slow ...sad"
+imageTitle = "rip internet!"
 
 [[params.profileMode.buttons]]
 name = "About"
@@ -69,7 +69,7 @@ url = "post/"
 
 [[params.profileMode.buttons]]
 name = "Resume"
-url = "resume.pdf"
+url = "https://cdn.prashantnook.in/files/resume.pdf"
 
 [[params.socialIcons]]
 name = "linkedin"
