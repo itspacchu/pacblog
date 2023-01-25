@@ -57,15 +57,15 @@ imageTitle = "I see your internet is slow ...sad"
 
 [[params.profileMode.buttons]]
 name = "About"
-url = "about"
+url = "about/"
 
 [[params.profileMode.buttons]]
 name = "Projects"
-url = "projects"
+url = "projects/"
 
 [[params.profileMode.buttons]]
 name = "Blog"
-url = "post"
+url = "post/"
 
 [[params.profileMode.buttons]]
 name = "Resume"
