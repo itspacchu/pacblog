@@ -2,11 +2,7 @@ version: '3.9'
 services:
     hugo:
       container_name: hugo
-      build:
-        context: .
-        args:
-          GIT_URL: https://github.com/itspacchu/pacblog
-      image: hugo:latest
+      build: .
       command: hugo --destination /export
       volumes:
         - ./build:/export
