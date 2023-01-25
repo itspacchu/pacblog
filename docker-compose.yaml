@@ -1,0 +1,25 @@
+version: '3.9'
+services:
+    hugo:
+      container_name: hugo
+      build:
+        context: .
+        args:
+          GIT_URL: https://github.com/itspacchu/pacblog
+      image: hugo:latest
+      command: hugo --destination /export
+      volumes:
+        - ./build:/export
+      environment:
+        GIT_URL: https://github.com/itspacchu/pacblog
+
+    web:
+      image: nginx
+      restart: always
+      depends_on: 
+        - hugo
+      volumes:
+      - ./build:/usr/share/nginx/html
+      - ./nginx/default:/etc/nginx/sites-enables/default
+      ports:
+      - "8080:80"

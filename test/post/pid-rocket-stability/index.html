@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Rocket PID Stability | Prashant&#39;s Nook</title>
+<meta name="keywords" content="" />
+<meta name="description" content="Hello everyone!
+Last semester we had a course on Control Systems, where we learned about controlling systems and how to design their controllers. As a huge fan of Boston dynamics Spot and their various robots, I&rsquo;ve always been curious about how they work.
+The very first time I was introduced to robotics was back in 5th grade&rsquo;s Summer Camp, where we had to build robots like Line following and Path navigating.">
+<meta name="author" content="PrashantN">
+<link rel="canonical" href="/post/pid-rocket-stability/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.48a18943c2fc15c38a372b8dde1f5e5dc0bc64fa6cb90f5a817d2f8c76b7f3ae.css" integrity="sha256-SKGJQ8L8FcOKNyuN3h9eXcC8ZPpsuQ9agX0vjHa3864=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Rocket PID Stability" />
+<meta property="og:description" content="Hello everyone!
+Last semester we had a course on Control Systems, where we learned about controlling systems and how to design their controllers. As a huge fan of Boston dynamics Spot and their various robots, I&rsquo;ve always been curious about how they work.
+The very first time I was introduced to robotics was back in 5th grade&rsquo;s Summer Camp, where we had to build robots like Line following and Path navigating." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/pid-rocket-stability/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-03-21T01:38:32&#43;05:30" />
+<meta property="article:modified_time" content="2022-03-21T01:38:32&#43;05:30" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Rocket PID Stability"/>
+<meta name="twitter:description" content="Hello everyone!
+Last semester we had a course on Control Systems, where we learned about controlling systems and how to design their controllers. As a huge fan of Boston dynamics Spot and their various robots, I&rsquo;ve always been curious about how they work.
+The very first time I was introduced to robotics was back in 5th grade&rsquo;s Summer Camp, where we had to build robots like Line following and Path navigating."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "/post/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Rocket PID Stability",
+      "item": "/post/pid-rocket-stability/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Rocket PID Stability",
+  "name": "Rocket PID Stability",
+  "description": "Hello everyone!\nLast semester we had a course on Control Systems, where we learned about controlling systems and how to design their controllers. As a huge fan of Boston dynamics Spot and their various robots, I\u0026rsquo;ve always been curious about how they work.\nThe very first time I was introduced to robotics was back in 5th grade\u0026rsquo;s Summer Camp, where we had to build robots like Line following and Path navigating.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Hello everyone!\nLast semester we had a course on Control Systems, where we learned about controlling systems and how to design their controllers. As a huge fan of Boston dynamics Spot and their various robots, I’ve always been curious about how they work.\nThe very first time I was introduced to robotics was back in 5th grade’s Summer Camp, where we had to build robots like Line following and Path navigating.\nNow coming back to the current project, This project is currently my Final year project, and I’m still working on it. But that doesn’t stop me from explaining the simulation built-in Godot.\nThe Project If you wanna skip to the final part, you can go to the Web Version\nThe main goal of this project is to build a simulation of a rocket controller, which can stabilize the rocket in a controlled manner. For this, the most naive approach is to use a PID controller to stabilize the rocket.\nA Proportional, Integral and Derivative controller (PID) is a traditional controller that can be used to stabilize a system. As the name suggests, the PID controller is a combination of a Proportional, Integral and Derivative controller, given by the following equation:\n$$F_{out} = k_p * \\delta + k_d * \\frac{d}{dt} \\delta + \\int_{0}^{t} k_i * \\delta dt$$\n$$ \\delta \\textrm{ is the error between the desired value and the actual value. }$$\nThat’s a heck of a lot of math, but it’s really simple to understand.\nNow if you’re any intelligent living specimen, It’ll be obvious to move the needle to the right by +23 degrees, and viola the error is 0.\nThis is the proportional controller, which is the simplest of the three. It simply tries to move the needle to the right by +23 degrees, which is what we did.\n$$ F_{P} = k_p * \\delta $$\nNow we can see the error is oscillating from -23 deg to +23 deg, Which is where the derivative comes in, which crushes down the oscillating errors.\n$$F_{D} = K_d * \\frac{d}{dt} \\delta$$\nHere there’s a DC error that isn’t oscillatory nor linear, For this DC error, we need to use an Integral controller.\n$$ F_{I} = K_i * \\int_{0}^{t} \\delta dt$$\nNow, why did I tell you all this? Well, this is the entirety of the PID controller.\nThe Rocket is a simple rigid body, where torque is applied to the rocket to rotate it and Force is applied as thrust to propel it.\nThe Thrust force can be rotated to change the direction of the force being applied, this is Thrust Vectoring.\nFor the simplicity of control, Rocket’s z rotation is locked to 0 deg.\nNow for any Control System, we have both Control parameters and Observer parameters. For this rocket, I’ve chosen the Control parameters to be the X, Y torque which is controlled by side thrusters, and the main thrust along with thrust vectoring controlled by their respective parameters, For the Observer parameters we have the Z position (Altitude) along with X, Y Rotation for keeping the rocket upright.\nNow for just settings all the PID controllers and observer parameters and tuning it just right.\nThe Simulation #rotational side thrusters PID_X = preload(\"res://PID.gd\").new(1, 0.5, 0.6) PID_Z = preload(\"res://PID.gd\").new(1, 0.5, 0.6) #thrust vectoring PID_tv_x = preload(\"res://PID.gd\").new(0.4, 0.2, 0.15) PID_tv_z = preload(\"res://PID.gd\").new(0.4, 0.2, 0.15) #height calib PID_Ypos = preload(\"res://PID.gd\").new(0.5, 0.35, 0.75) PID_tv_x._set_range(-0.3,0.3) PID_tv_z._set_range(-0.3,0.3) PID_Ypos._set_range(0,1) PID_Ypos.minimum_clamp = 0; # can't get negative thrust right The PID values chosen as tuned experimentally, although there are much better ways of properly tuning it and getting the best results the first set of values chosen “educatively..lol” just worked out of the box.\nI know tuning is done by computing the transfer function of the PID system I’ve got going but I’m planning on switching to MATLAB for actual simulation so this project just deals with the basic control scheme and manual tuning.\nWhat kind of ancient browser are you using! html videos not supported. As you can see there’s a lot of oscillation and drift on the X Y plane, But it does seem to stabilize itself upright so that’s progress.\nAfter a bit of adjusting the Derivative part and adding an observer for the X Y position here’s the result.\nWhat kind of ancient browser are you using! html videos not supported. Auto landing By setting the target rotating and position to a particular point, The rocket tries to reach the specified location. By generating a path towards a landing zone and interpolating the position, We can land the rocket!.\n... if(autopilot): err_rot_x = target_rot.x - rx; err_rot_z = target_rot.z - rz; #vec2 y = z blender coord space err_pos_x = target_pos.x - px; err_pos_z = target_pos.z - pz; err_pos_y = target_pos.y - height; ... What kind of ancient browser are you using! html videos not supported. Overall this has been a very fun project, I’ve learned a lot about building PID controllers and using it, although in a Simulation it’s still a very fun thing to play around with. For my major project, I’m planning on using this as a base to build a practical implementation. Till that time keep exploring :D.\nWeb version A web playable version of this project is available Here\n",
+  "wordCount" : "873",
+  "inLanguage": "en",
+  "datePublished": "2022-03-21T01:38:32+05:30",
+  "dateModified": "2022-03-21T01:38:32+05:30",
+  "author":{
+    "@type": "Person",
+    "name": "PrashantN"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/pid-rocket-stability/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Prashant's Nook",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="/" accesskey="h" title="Prashant&#39;s Nook (Alt + H)">Prashant&#39;s Nook</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="/post/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Rocket PID Stability
+    </h1>
+    <div class="post-meta"><span title='2022-03-21 01:38:32 +0530 +0530'>2022-03-21</span>&nbsp;·&nbsp;PrashantN
+
+</div>
+  </header> 
+  <div class="post-content"><p>Hello everyone!</p>
+<p>Last semester we had a course on Control Systems, where we learned about controlling systems and how to design their controllers. As a huge fan of Boston dynamics Spot and their various robots, I&rsquo;ve always been curious about how they work.</p>
+<p>The very first time I was introduced to robotics was back in 5th grade&rsquo;s Summer Camp, where we had to build robots like Line following and Path navigating.</p>
+<center>
+<img src="https://media.discordapp.net/attachments/852930321493655563/955205374066192414/facebook_nextlearn.png" width=40%>
+</center>
+<p>Now coming back to the current project, This project is currently my Final year project, and I&rsquo;m still working on it. But that doesn&rsquo;t stop me from explaining the simulation built-in <a href="https://godotengine.org/">Godot</a>.</p>
+<h3 id="the-project">The Project<a hidden class="anchor" aria-hidden="true" href="#the-project">#</a></h3>
+<blockquote>
+<p>If you wanna skip to the final part, you can go to the <a href="/post/pid-rocket-stability/#web-version">Web Version</a></p>
+</blockquote>
+<p>The main goal of this project is to build a simulation of a rocket controller, which can stabilize the rocket in a controlled manner. For this, the most naive approach is to use a PID controller to stabilize the rocket.</p>
+<p>A <strong>P</strong>roportional, <strong>I</strong>ntegral and <strong>D</strong>erivative controller <em>(PID)</em> is a traditional controller that can be used to stabilize a system. As the name suggests, the PID controller is a combination of a Proportional, Integral and Derivative controller, given by the following equation:</p>
+<p>$$F_{out} = k_p * \delta + k_d * \frac{d}{dt} \delta + \int_{0}^{t} k_i * \delta dt$$</p>
+<p>$$ \delta \textrm{  is the error between the desired value and the actual value. }$$</p>
+<p>That&rsquo;s a heck of a lot of math, but it&rsquo;s really simple to understand.</p>
+<img src="https://media.discordapp.net/attachments/852930321493655563/955211531807772733/unknown.png" width=75%>
+<p>Now if you&rsquo;re any intelligent living specimen, It&rsquo;ll be obvious to move the needle to the right by +23 degrees, and viola the error is 0.</p>
+<p>This is the <em>proportional</em> controller, which is the simplest of the three. It simply tries to move the needle to the right by +23 degrees, which is what we did.</p>
+<p>$$ F_{P} = k_p * \delta $$</p>
+<img src="https://media.discordapp.net/attachments/852930321493655563/955216292556701736/cool_gif_right.gif" width=75%>
+<p>Now we can see the error is oscillating from -23 deg to +23 deg, Which is where the derivative comes in, which crushes down the oscillating errors.</p>
+<p>$$F_{D} = K_d * \frac{d}{dt} \delta$$</p>
+<img src="https://media.discordapp.net/attachments/852930321493655563/955335473990074418/unknown.png?width=581&height=506" width=75%>
+<p>Here there&rsquo;s a DC error that isn&rsquo;t oscillatory nor linear, For this DC error, we need to use an Integral controller.</p>
+<p>$$ F_{I} = K_i * \int_{0}^{t} \delta dt$$</p>
+<p>Now, why did I tell you all this?
+Well, this is the entirety of the PID controller.</p>
+<p>The Rocket is a simple rigid body, where torque is applied to the rocket to rotate it and Force is applied as thrust to propel it.</p>
+<p>The Thrust force can be rotated to change the direction of the force being applied, this is Thrust Vectoring.</p>
+<img src="https://media.discordapp.net/attachments/852930321493655563/955337632018235433/unknown.png" width=75%>
+<p>For the simplicity of control, Rocket&rsquo;s z rotation is locked to 0 deg.</p>
+<p>Now for any Control System, we have both Control parameters and Observer parameters. For this rocket, I&rsquo;ve chosen the Control parameters to be the X, Y torque which is controlled by side thrusters, and the main thrust along with thrust vectoring controlled by their respective parameters, For the Observer parameters we have the Z position (Altitude) along with X, Y Rotation for keeping the rocket upright.</p>
+<img src="https://media.discordapp.net/attachments/852930321493655563/955339707657646100/unknown.png" width=75%>
+<p>Now for just settings all the PID controllers and observer parameters and tuning it just right.</p>
+<h4 id="the-simulation">The Simulation<a hidden class="anchor" aria-hidden="true" href="#the-simulation">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span>   <span style="color:#75715e">#rotational side thrusters</span>
+</span></span><span style="display:flex;"><span>   PID_X <span style="color:#f92672">=</span> preload(<span style="color:#e6db74">&#34;res://PID.gd&#34;</span>)<span style="color:#f92672">.</span>new(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">0.6</span>)
+</span></span><span style="display:flex;"><span>   PID_Z <span style="color:#f92672">=</span> preload(<span style="color:#e6db74">&#34;res://PID.gd&#34;</span>)<span style="color:#f92672">.</span>new(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">0.6</span>)
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">#thrust vectoring</span>
+</span></span><span style="display:flex;"><span>   PID_tv_x <span style="color:#f92672">=</span> preload(<span style="color:#e6db74">&#34;res://PID.gd&#34;</span>)<span style="color:#f92672">.</span>new(<span style="color:#ae81ff">0.4</span>, <span style="color:#ae81ff">0.2</span>, <span style="color:#ae81ff">0.15</span>)
+</span></span><span style="display:flex;"><span>   PID_tv_z <span style="color:#f92672">=</span> preload(<span style="color:#e6db74">&#34;res://PID.gd&#34;</span>)<span style="color:#f92672">.</span>new(<span style="color:#ae81ff">0.4</span>, <span style="color:#ae81ff">0.2</span>, <span style="color:#ae81ff">0.15</span>)
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">#height calib</span>
+</span></span><span style="display:flex;"><span>   PID_Ypos <span style="color:#f92672">=</span> preload(<span style="color:#e6db74">&#34;res://PID.gd&#34;</span>)<span style="color:#f92672">.</span>new(<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">0.35</span>, <span style="color:#ae81ff">0.75</span>)
+</span></span><span style="display:flex;"><span>   PID_tv_x<span style="color:#f92672">.</span>_set_range(<span style="color:#f92672">-</span><span style="color:#ae81ff">0.3</span>,<span style="color:#ae81ff">0.3</span>)
+</span></span><span style="display:flex;"><span>   PID_tv_z<span style="color:#f92672">.</span>_set_range(<span style="color:#f92672">-</span><span style="color:#ae81ff">0.3</span>,<span style="color:#ae81ff">0.3</span>)
+</span></span><span style="display:flex;"><span>   PID_Ypos<span style="color:#f92672">.</span>_set_range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>   PID_Ypos<span style="color:#f92672">.</span>minimum_clamp <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#75715e"># can&#39;t get negative thrust right</span>
+</span></span></code></pre></div><p>The PID values chosen as tuned experimentally, although there are much better ways of properly tuning it and getting the best results the first set of values chosen &ldquo;educatively..lol&rdquo; just worked out of the box.</p>
+<p>I know tuning is done by computing the transfer function of the PID system I&rsquo;ve got going but I&rsquo;m planning on switching to MATLAB for actual simulation so this project just deals with the basic control scheme and manual tuning.</p>
+<video width=75% height=auto controls>
+ <source src="https://user-images.githubusercontent.com/37984032/145939362-5da16fb6-5be7-44cf-a78a-a2c4dfc6d4a1.mp4" type="video/mp4">
+   What kind of ancient browser are you using! html videos not supported.
+</video>
+<p>As you can see there&rsquo;s a lot of oscillation and drift on the X Y plane, But it does seem to stabilize itself upright so that&rsquo;s progress.</p>
+<p>After a bit of adjusting the Derivative part and adding an observer for the X Y position here&rsquo;s the result.</p>
+<video width=75% height=auto controls>
+ <source src="https://user-images.githubusercontent.com/37984032/145953150-054bd84f-2ddf-4bb2-859a-dfe86047e784.mp4" type="video/mp4">
+   What kind of ancient browser are you using! html videos not supported.
+</video>
+<h4 id="auto-landing">Auto landing<a hidden class="anchor" aria-hidden="true" href="#auto-landing">#</a></h4>
+<p>By setting the target rotating and position to a particular point, The rocket tries to reach the specified location. By generating a path towards a landing zone and interpolating the position, We can land the rocket!.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">if</span>(autopilot):
+</span></span><span style="display:flex;"><span>       err_rot_x <span style="color:#f92672">=</span> target_rot<span style="color:#f92672">.</span>x <span style="color:#f92672">-</span> rx;
+</span></span><span style="display:flex;"><span>       err_rot_z <span style="color:#f92672">=</span> target_rot<span style="color:#f92672">.</span>z <span style="color:#f92672">-</span> rz; <span style="color:#75715e">#vec2 y = z blender coord space</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>       err_pos_x <span style="color:#f92672">=</span> target_pos<span style="color:#f92672">.</span>x <span style="color:#f92672">-</span> px;
+</span></span><span style="display:flex;"><span>       err_pos_z <span style="color:#f92672">=</span> target_pos<span style="color:#f92672">.</span>z <span style="color:#f92672">-</span> pz;
+</span></span><span style="display:flex;"><span>       err_pos_y <span style="color:#f92672">=</span> target_pos<span style="color:#f92672">.</span>y <span style="color:#f92672">-</span> height; 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span></code></pre></div><br>
+<video width=75% height=auto controls>
+ <source src="https://user-images.githubusercontent.com/37984032/146388484-9a42fa5b-f205-43b6-a0e2-6b0596569437.mp4" type="video/mp4">
+   What kind of ancient browser are you using! html videos not supported.
+</video>
+<p>Overall this has been a very fun project, I&rsquo;ve learned a lot about building PID controllers and using it, although in a Simulation it&rsquo;s still a very fun thing to play around with. For my major project, I&rsquo;m planning on using this as a base to build a practical implementation. Till that time keep exploring :D.</p>
+<p><a href="https://github.com/itspacchu/godotRocket"><img src="https://images-ext-1.discordapp.net/external/0x1sNbKU4L3OamtuWiC7ZgiUmFGXUBZzue_9JezeinI/https/opengraph.githubassets.com/acf51b2c4c802bdf42eae0ad72546e5394d8a2b63e5723d82a48c19715bc2b2d/itspacchu/GodotRocket" width=50%></a></p>
+<h3 id="web-version">Web version<a hidden class="anchor" aria-hidden="true" href="#web-version">#</a></h3>
+<p>A web playable version of this project is available <a href="/projects/webrun/godotrocket/rocketpid.html">Here</a></p>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+  </div>
+
+  <footer class="post-footer">
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="/">Prashant&#39;s Nook</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
