@@ -20,46 +20,18 @@ jobs:
         GITLAB_PROJECT_ID: "42900035"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  #TODO need arm machines
+  GitLabRegistryPush:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      - name Login into docker
+        run: docker login -u $ itspacchu -p ${{ secrets.GITLAB_PASSWORD }} registry.gitlab.com/itspacchu/pacblog
+      - name Build docker
+        run: docker build -t registry.gitlab.com/itspacchu/pacblog:arm .
+      - name Push Registry
+        run: docker push registry.gitlab.com/itspacchu/pacblog:arm
 
-  # BuildDockerImages:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #   - uses: actions/checkout@v1
-  #   - name: build docker image
-  #     run: docker build -t 
-
-
-
-  # UpdateTheme:
-  #   runs-on: self-hosted
-
-  #   steps:
-  #     - name: Pull Submodule Papermod
-  #       run: cd /home/ubuntu/pacblog && git submodule update --init --recursive
-
-  # UpdateServer:
-  #   runs-on: self-hosted
-
-  #   steps:
-  #     - name: stash local changes before 
-  #       run: cd /home/ubuntu/pacblog && git stash
-
-  #     - name: pull new changes from github
-  #       run: cd /home/ubuntu/pacblog && git pull origin
-
-
-  # GenerateHtmlFiles:
-  #   runs-on: self-hosted
-  #   needs: [UpdateServer,UpdateTheme]
-  #   steps:
-  #     - name: run the updater script
-  #       run: cd /home/ubuntu/pacblog && hugo
-
-  # RestartNginx:
-  #   runs-on: self-hosted
-  #   needs: GenerateHtmlFiles
-
-  #   steps:
-  #     - name: restart nginx server
-  #       run:  sudo systemctl restart nginx
