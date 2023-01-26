@@ -9,4 +9,6 @@ RUN mkdir /workdir /export
 WORKDIR /workdir
 
 RUN git clone --recurse-submodules ${GIT_URL} ./
-RUN hugo --destination /export
+CMD ["hugo", "--destination","/export"]
+
+VOLUME [ "/export" ]
