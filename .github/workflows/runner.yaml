@@ -4,35 +4,62 @@ on:
       - master
 
 jobs:
-  UpdateTheme:
-    runs-on: self-hosted
-
+  GitlabMirror:
+    runs-on: ubuntu-latest
     steps:
-      - name: Pull Submodule Papermod
-        run: cd /home/ubuntu/pacblog && git submodule update --init --recursive
+    - uses: actions/checkout@v1
+    - name: Mirror + trigger CI
+      uses: SvanBoxel/gitlab-mirror-and-ci-action@master
+      with:
+        args: "https://gitlab.com/itspacchu/pacblog"
+      env:
+        FORCE_PUSH: "false"
+        GITLAB_HOSTNAME: "gitlab.com"
+        GITLAB_USERNAME: "svboxel"
+        GITLAB_PASSWORD: ${{ secrets.GITLAB_PASSWORD }}
+        GITLAB_PROJECT_ID: "42900035"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  UpdateServer:
-    runs-on: self-hosted
+  #TODO need arm machines
 
-    steps:
-      - name: stash local changes before 
-        run: cd /home/ubuntu/pacblog && git stash
+  # BuildDockerImages:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - uses: actions/checkout@v1
+  #   - name: build docker image
+  #     run: docker build -t 
 
-      - name: pull new changes from github
-        run: cd /home/ubuntu/pacblog && git pull origin
 
 
-  GenerateHtmlFiles:
-    runs-on: self-hosted
-    needs: [UpdateServer,UpdateTheme]
-    steps:
-      - name: run the updater script
-        run: cd /home/ubuntu/pacblog && hugo
+  # UpdateTheme:
+  #   runs-on: self-hosted
 
-  RestartNginx:
-    runs-on: self-hosted
-    needs: GenerateHtmlFiles
+  #   steps:
+  #     - name: Pull Submodule Papermod
+  #       run: cd /home/ubuntu/pacblog && git submodule update --init --recursive
 
-    steps:
-      - name: restart nginx server
-        run:  sudo systemctl restart nginx
+  # UpdateServer:
+  #   runs-on: self-hosted
+
+  #   steps:
+  #     - name: stash local changes before 
+  #       run: cd /home/ubuntu/pacblog && git stash
+
+  #     - name: pull new changes from github
+  #       run: cd /home/ubuntu/pacblog && git pull origin
+
+
+  # GenerateHtmlFiles:
+  #   runs-on: self-hosted
+  #   needs: [UpdateServer,UpdateTheme]
+  #   steps:
+  #     - name: run the updater script
+  #       run: cd /home/ubuntu/pacblog && hugo
+
+  # RestartNginx:
+  #   runs-on: self-hosted
+  #   needs: GenerateHtmlFiles
+
+  #   steps:
+  #     - name: restart nginx server
+  #       run:  sudo systemctl restart nginx

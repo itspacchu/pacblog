@@ -5,6 +5,28 @@ draft: false
 
 # Projects
 
+## Table of contents 
+- [Projects](#projects)
+  - [Table of contents](#table-of-contents)
+  - [• 3D Dashboard for IIIT Smart City Lab](#-3d-dashboard-for-iiit-smart-city-lab)
+  - [• Smart Lamp post (KETI OneM2M Hackathon)](#-smart-lamp-post-keti-onem2m-hackathon)
+      - [A blog post about this on IIIT](#a-blog-post-about-this-on-iiit)
+  - [• Rocket Stablity Controller](#-rocket-stablity-controller)
+  - [• Gcode experiements](#-gcode-experiements)
+      - [Test it out](#test-it-out)
+  - [• Discord Bot](#-discord-bot)
+  - [• Linear Antenna Phase Shader](#-linear-antenna-phase-shader)
+  - [• Newton Fractal Shader](#-newton-fractal-shader)
+  - [• Lorenz attractor](#-lorenz-attractor)
+  - [• Blender Vector Fields](#-blender-vector-fields)
+- [Games](#games)
+  - [• Worst Tank](#-worst-tank)
+  - [• Torch Runner](#-torch-runner)
+- [Web dev](#web-dev)
+  - [• Fourier Epicycle Drawing (~ inspired from 3b1b and Coding train )](#-fourier-epicycle-drawing--inspired-from-3b1b-and-coding-train-)
+  - [• College project portal \& Result parser](#-college-project-portal--result-parser)
+
+
 ## • [3D Dashboard for IIIT Smart City Lab](http://dashboard.iiit.prashantnook.in/)
 An exploratory playground to visualise nodes on iiit's onem2m server in a more openworld fashion.
 <center>
