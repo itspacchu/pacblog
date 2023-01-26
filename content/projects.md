@@ -1,5 +1,5 @@
 ---
-title: "Project Catalog"
+title: "Catalog"
 draft: false
 ---
 
