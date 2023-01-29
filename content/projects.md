@@ -5,30 +5,30 @@ draft: false
 
 - [Projects](#projects)
   - [3D Dashboard for IIIT Smart City Lab](#3d-dashboard-for-iiit-smart-city-lab)
-      - [Download (github releases)](#download-github-releases)
-  - [Smart Lamp post (KETI OneM2M Hackathon)](#smart-lamp-post-keti-onem2m-hackathon)
-      - [A blog post about this on IIIT](#a-blog-post-about-this-on-iiit)
-  - [Rocket Stablity Controller](#rocket-stablity-controller)
+      - [Download (github releases)](#download-github-releaseshttpsgithubcomitspacchu3d-dashboardreleases)
+  - [Smart Lamp post (KETI OneM2M Hackathon)](#smart-lamp-post-keti-onem2m-hackathonposte-paper-kiosk)
+      - [A blog post about this on IIIT](#a-blog-post-about-this-on-iiithttpsblogsiiitacinmonthly_newsbest-technology-award-in-keti-hackathon-2022)
+  - [Rocket Stablity Controller](#rocket-stablity-controllerpostpid-rocket-stability)
   - [Gcode experiements](#gcode-experiements)
       - [Test it out](#test-it-out)
   - [Discord Bot](#discord-bot)
-  - [Linear Antenna Phase Shader](#linear-antenna-phase-shader)
+  - [Linear Antenna Phase Shader](#linear-antenna-phase-shaderhttpsoldprashantnookinprojectswebrunantennaphaseantennaphasehtml)
   - [Newton Fractal Shader](#newton-fractal-shader)
   - [Lorenz attractor](#lorenz-attractor)
   - [Blender Vector Fields](#blender-vector-fields)
 - [Games](#games)
-  - [Worst Tank](#worst-tank)
-  - [Torch Runner](#torch-runner)
+  - [Worst Tank](#worst-tankhttpspacchuitchioworsttank)
+  - [Torch Runner](#torch-runnerhttpspacchuitchiotorch-runner)
 - [Web dev](#web-dev)
-  - [Fourier Epicycle Drawing (~ inspired from 3b1b and Coding train )](#fourier-epicycle-drawing--inspired-from-3b1b-and-coding-train-)
-  - [College project portal \& Result parser](#college-project-portal--result-parser)
+  - [Fourier Epicycle Drawing (~ inspired from 3b1b and Coding train )](#fourier-epicycle-drawing--inspired-from-3b1b-and-coding-train-httpsoldprashantnookinprojectswebrunfouriercirclesreindexhtml)
+  - [College project portal \& Result parser](#college-project-portal--result-parserhttpsenigmahubaceherokuappcom)
 
 ---
 
 # Projects
 
 
-## [3D Dashboard for IIIT Smart City Lab](http://dashboard.iiit.prashantnook.in/)
+## 3D Dashboard for IIIT Smart City Lab
 An exploratory playground to visualise nodes on iiit's onem2m server in a more openworld fashion.
 
 <center>
@@ -36,13 +36,16 @@ An exploratory playground to visualise nodes on iiit's onem2m server in a more o
 ![img1](https://user-images.githubusercontent.com/37984032/209670446-162e58d1-37d1-4eb8-a7e0-9530c3cb8ed0.png)
 ![img2](https://user-images.githubusercontent.com/37984032/209670658-ad529a69-609a-4f22-a14a-38ac2f52f9ba.png)
 
-A web playable version (testing) is setup [Gracie:prashantnook.in](http://dashboard.iiit.prashantnook.in)
-Final Hosted version is available [Gracie:iiit.ac.in](https://smartcitylivinglab.iiit.ac.in/gracie/)
-
-#### [Download (github releases)](https://github.com/itspacchu/3d-dashboard/releases)
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/dA0UE7ec7F4" title="Grace Dashboard Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 </center>
+
+A web playable version (testing) is setup [Gracie:prashantnook.in](http://dashboard.iiit.prashantnook.in)
+
+Final Hosted version is available [Gracie:iiit.ac.in](https://smartcitylivinglab.iiit.ac.in/gracie/)
+
+#### [Download (github releases)](https://github.com/itspacchu/3d-dashboard/releases)
 
 <br>
 
