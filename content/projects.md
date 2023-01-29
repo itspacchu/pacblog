@@ -5,6 +5,7 @@ draft: false
 
 - [Projects](#projects)
   - [3D Dashboard for IIIT Smart City Lab](#3d-dashboard-for-iiit-smart-city-lab)
+      - [Download (github releases)](#download-github-releases)
   - [Smart Lamp post (KETI OneM2M Hackathon)](#smart-lamp-post-keti-onem2m-hackathon)
       - [A blog post about this on IIIT](#a-blog-post-about-this-on-iiit)
   - [Rocket Stablity Controller](#rocket-stablity-controller)
@@ -29,12 +30,17 @@ draft: false
 
 ## [3D Dashboard for IIIT Smart City Lab](http://dashboard.iiit.prashantnook.in/)
 An exploratory playground to visualise nodes on iiit's onem2m server in a more openworld fashion.
+
 <center>
 
 ![img1](https://user-images.githubusercontent.com/37984032/209670446-162e58d1-37d1-4eb8-a7e0-9530c3cb8ed0.png)
 ![img2](https://user-images.githubusercontent.com/37984032/209670658-ad529a69-609a-4f22-a14a-38ac2f52f9ba.png)
 
-A web playable version (testing) is setup [here](http://dashboard.iiit.prashantnook.in)
+A web playable version (testing) is setup [Gracie:prashantnook.in](http://dashboard.iiit.prashantnook.in)
+Final Hosted version is available [Gracie:iiit.ac.in](https://smartcitylivinglab.iiit.ac.in/gracie/)
+
+#### [Download (github releases)](https://github.com/itspacchu/3d-dashboard/releases)
+
 
 </center>
 
@@ -207,6 +213,7 @@ This is an entry to ludam-dare gamejam.
 
 
 ## [College project portal & Result parser](https://enigmahubace.herokuapp.com/)
+> Currently offline due to heroku's free tier expiration
 
 ![image](https://user-images.githubusercontent.com/37984032/158582242-f272934d-6012-4e93-9bc3-1f1eb8194aa7.png)
 ![image](https://user-images.githubusercontent.com/37984032/158582384-a1584297-3be7-4f45-a0a7-272519fcf61b.png)
