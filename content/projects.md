@@ -8,6 +8,7 @@ draft: false
       - [Download (github releases)](#download-github-releaseshttpsgithubcomitspacchu3d-dashboardreleases)
   - [Smart Lamp post (KETI OneM2M Hackathon)](#smart-lamp-post-keti-onem2m-hackathonposte-paper-kiosk)
       - [A blog post about this on IIIT](#a-blog-post-about-this-on-iiithttpsblogsiiitacinmonthly_newsbest-technology-award-in-keti-hackathon-2022)
+      - [A blog post written by me](#a-blog-post-written-by-mehttpspacchuitchioposte-paper-kiosk)
   - [Rocket Stablity Controller](#rocket-stablity-controllerpostpid-rocket-stability)
   - [Gcode experiements](#gcode-experiements)
       - [Test it out](#test-it-out)
@@ -38,12 +39,12 @@ An exploratory playground to visualise nodes on iiit's onem2m server in a more o
 
 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dA0UE7ec7F4" title="Grace Dashboard Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+![R D_SHOWCASE_GRACE](https://user-images.githubusercontent.com/37984032/215316246-c598539b-7714-4b31-8470-d1d5ee966bf3.png)
 
 </center>
 
-A web playable version (testing) is setup [Gracie:prashantnook.in](http://dashboard.iiit.prashantnook.in)
-
-Final Hosted version is available [Gracie:iiit.ac.in](https://smartcitylivinglab.iiit.ac.in/gracie/)
+A web playable version (testing) is setup [_Gracie:prashantnook.in_](http://dashboard.iiit.prashantnook.in)
+Final Hosted version is available [_Gracie:iiit.ac.in_](https://smartcitylivinglab.iiit.ac.in/gracie/)
 
 #### [Download (github releases)](https://github.com/itspacchu/3d-dashboard/releases)
 
@@ -59,9 +60,11 @@ A Smart lamp post for essential data dashboard with e-paper display
 <center>
 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zbXav_wcGhQ" title="KETI OneM2M Hackathon project submission | #TeamAthena" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+</center>
+
 #### [A blog post about this on IIIT](https://blogs.iiit.ac.in/monthly_news/best-technology-award-in-keti-hackathon-2022/)
 
-</center>
+#### [A blog post written by me](/post/e-paper-kiosk/)
 
 <br>
 

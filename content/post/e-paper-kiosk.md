@@ -200,6 +200,8 @@ Overall it was really a fun project to work with.
 We won the Best Technology award in KETI (Korean Electronics Technlogical Institute) OneM2M hackathon.
 I did not expect we would pull this off.
 
+![Team Athena](https://user-images.githubusercontent.com/37984032/215316227-4b653cf5-0773-4e5d-93fc-25c62462481e.jpg)
+
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
