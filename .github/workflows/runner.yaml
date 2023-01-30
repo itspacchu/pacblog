@@ -30,8 +30,6 @@ jobs:
         uses: docker/setup-buildx-action@v2
       - name: Login into docker
         run: docker login -u itspacchu -p ${{ secrets.GITLAB_PASSWORD }} registry.gitlab.com/itspacchu/pacblog:arm
-      - name: Build docker
-        run: docker buildx build --platform=linux/arm64 -t registry.gitlab.com/itspacchu/pacblog:arm .
-      - name: Push Registry
-        run: docker push registry.gitlab.com/itspacchu/pacblog:arm
+      - name: Build and Push
+        run: docker buildx build --platform=linux/arm64 -t registry.gitlab.com/itspacchu/pacblog:arm --push . 
 
