@@ -16,6 +16,7 @@ services:
         - hugo
       volumes:
       - ./build:/usr/share/nginx/html
+      - ~/cdn:/usr/share/nginx/html/cdn
       - ./nginx/default:/etc/nginx/sites-enables/default
       ports:
-      - "8080:80"
+      - "8086:80"

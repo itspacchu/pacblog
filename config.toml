@@ -11,7 +11,7 @@ googleAnalytics = ""
 name = "Prashant N"
 
 [params]
-author = "PrashantN"
+author = "Prashant N"
 description = ""
 dateFormat = "2006-01-02"
 paginationSinglePost = true
@@ -35,7 +35,7 @@ url = "https://github.com/itspacchu"
 
 env = "production"
 description = "Prashant's Nook"
-author = "PrashantN"
+author = "Prashant"
 defaultTheme = "auto"
 ShowShareButtons = true
 ShowReadingTime = true
@@ -51,7 +51,7 @@ images = [
 [params.profileMode]
 enabled = true
 title = "Prashant's Nook"
-subtitle = "Hello fellow eartlings, I see you have stumbled on my website <hr> Here are some places you can go to."
+subtitle = "Hello fellow earthlings, I see you have stumbled on my website <hr> Here are some places you can go to."
 imageUrl = "https://avatars.githubusercontent.com/u/37984032"
 imageTitle = "rip internet!"
 
@@ -69,7 +69,7 @@ url = "post/"
 
 [[params.profileMode.buttons]]
 name = "Resume"
-url = "https://old.prashantnook.in/resume.pdf"
+url = "/cdn/resume.pdf"
 
 [[params.socialIcons]]
 name = "linkedin"
