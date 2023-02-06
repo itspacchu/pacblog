@@ -9,7 +9,7 @@ tag: "about"
 ![profileboi](https://avatars.githubusercontent.com/u/37984032)
 
 ## <div title="and other hyper intelligent species">**Greeting humans!**</div><br>
-I am Prashant, an undergraduate *Electronics and Communication* Student.<br>
+I am Prashant, a *Electronics and Communication* Graduate.<br>
 I have a keen interest in Mathematical modelling, Robotics and building Electronic contraptions.
 <br>Building visualisations and interactive systems for the concepts been taught and watching them in action is the most fun part of building things.
               
@@ -33,5 +33,3 @@ I have a keen interest in Mathematical modelling, Robotics and building Electron
 ### Music
 
 ![music-is-beautiful](https://www.tapmusic.net/collage.php?user=itspacchu&type=6month&size=5x5&caption=true&playcount=false)
-
-
