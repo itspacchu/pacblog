@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:bookworm
 
 LABEL maintainer="prashantn@riseup.net"
 LABEL name="Nandipati Prashant"
@@ -17,4 +17,6 @@ RUN git clone --recurse-submodules  ${GIT_URL} .  && \
     curl -o /etc/nginx/nginx.conf "https://gist.githubusercontent.com/itspacchu/bda611d49efe8c3d534a6a22f5acb972/raw/e32acaf9361fa9716c3672d50d556fe090ffc6b0/nginx.conf" && \
     hugo && cp -r ./public/* /usr/share/nginx/html
 
-RUN curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb && dpkg -i cloudflared.deb && cloudflared service install ${CLOUDFLARED_SECRET}
+RUN curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64.deb && dpkg -i cloudflared.deb && cloudflared service install ${CLOUDFLARED_SECRET}
+
+
