@@ -31,5 +31,20 @@ jobs:
       - name: Login into docker
         run: docker login -u itspacchu -p ${{ secrets.GITLAB_PASSWORD }} registry.gitlab.com/itspacchu/pacblog:arm
       - name: Build and Push
-        run: docker buildx build --platform=linux/arm64 -t registry.gitlab.com/itspacchu/pacblog:arm --push . 
+        env:
+          CLOUDFLARED_SECRET: ${{ secrets.CLOUDFLARED_SECRET }}
+        run: |
+          docker buildx build \
+            --platform=linux/arm64 \
+            --build-arg CLOUDFLARED_SECRET="${CLOUDFLARED_SECRET}" \
+            -t registry.gitlab.com/itspacchu/pacblog:arm \
+            --push .
 
+  RunOnHomePi:
+    needs: [GitLabRegistryPush] 
+    runs-on: [self-hosted, homepi]
+    steps:
+      - name: Run Uploaded Docker Image
+        run: |
+          docker pull registry.gitlab.com/itspacchu/pacblog:arm
+          docker run -d --name pacblog-arm registry.gitlab.com/itspacchu/pacblog:arm
