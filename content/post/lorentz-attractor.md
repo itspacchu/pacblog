@@ -2,6 +2,9 @@
 title: "Lorentz Attractor"
 date: 2020-02-29T00:22:10+05:30
 draft: false
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+disableShare: true
 ---
 
 ++++ This post is mirrored from [here](https://vonneumannscientia.pythonanywhere.com/post/7/)

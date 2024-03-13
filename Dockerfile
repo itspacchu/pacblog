@@ -5,7 +5,7 @@ LABEL name="Nandipati Prashant"
 
 ENV GIT_URL="https://github.com/itspacchu/pacblog"
 
-RUN apt update && apt upgrade -y && apt install wget git -y && wget https://github.com/gohugoio/hugo/releases/download/v0.110.0/hugo_0.110.0_linux-$(dpkg --print-architecture).deb && dpkg -i hugo_0.110.0_linux-$(dpkg --print-architecture).deb  
+RUN apt update && apt upgrade -y && apt install wget git -y && wget https://github.com/gohugoio/hugo/releases/download/v0.120.4/hugo_0.120.4_linux-$(dpkg --print-architecture).deb && dpkg -i hugo_0.120.4_linux-$(dpkg --print-architecture).deb  
 
 WORKDIR /runtime
 

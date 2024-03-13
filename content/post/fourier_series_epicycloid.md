@@ -2,6 +2,9 @@
 title: "Fourier Series Epicycloid"
 date: 2020-07-09T15:18:42+05:30
 draft: false
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+disableShare: true
 ---
 
 ++++ This post is mirrored from [here](https://vonneumannscientia.pythonanywhere.com/post/23/)

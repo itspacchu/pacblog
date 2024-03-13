@@ -2,6 +2,9 @@
 title: "Covid SRI Model"
 date: 2020-07-08T20:14:08:27+05:30
 draft: false
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+disableShare: true
 ---
 
 ++++ This post is mirrored from [here](https://vonneumannscientia.pythonanywhere.com/post/18/)

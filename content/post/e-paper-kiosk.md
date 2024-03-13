@@ -2,6 +2,9 @@
 title: "E Paper Kiosk"
 date: 2022-08-28T12:58:29+05:30
 draft: false
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+disableShare: true
 ---
 
 Greetings everyone,

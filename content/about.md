@@ -3,6 +3,9 @@ title: "Behind the person"
 date: 2001-09-15T02:49:07+05:30
 draft: false
 tag: "about"
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+disableShare: true
 ---
 
 

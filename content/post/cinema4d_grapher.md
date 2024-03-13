@@ -2,6 +2,9 @@
 title: "Cinema4d Grapher"
 date: 2020-03-28T20:15:42:36+05:30
 draft: false
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+disableShare: true
 ---
 
 ++++ This post is mirrored from [here](https://vonneumannscientia.pythonanywhere.com/post/21/)

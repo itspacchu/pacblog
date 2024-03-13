@@ -2,6 +2,9 @@
 title: "Double_pendulum"
 date: 2020-08-05T22:12:05+05:30
 draft: false
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+disableShare: true
 ---
 
 Lately Youtube has been recommending me random Chaos theory videos and how small changes to input of a system can lead to huge changes in the Output.

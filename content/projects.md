@@ -1,29 +1,9 @@
 ---
 title: "Catalog"
 draft: false
----
-
-- [Projects](#projects)
-  - [3D Dashboard for IIIT Smart City Lab](#3d-dashboard-for-iiit-smart-city-lab)
-      - [Download (github releases)](#download-github-releaseshttpsgithubcomitspacchu3d-dashboardreleases)
-  - [Smart Lamp post (KETI OneM2M Hackathon)](#smart-lamp-post-keti-onem2m-hackathonposte-paper-kiosk)
-      - [A blog post about this on IIIT](#a-blog-post-about-this-on-iiithttpsblogsiiitacinmonthly_newsbest-technology-award-in-keti-hackathon-2022)
-      - [A blog post written by me](#a-blog-post-written-by-mehttpspacchuitchioposte-paper-kiosk)
-  - [Rocket Stablity Controller](#rocket-stablity-controllerpostpid-rocket-stability)
-  - [Gcode experiements](#gcode-experiements)
-      - [Test it out](#test-it-out)
-  - [Discord Bot](#discord-bot)
-  - [Linear Antenna Phase Shader](#linear-antenna-phase-shaderhttpsoldprashantnookinprojectswebrunantennaphaseantennaphasehtml)
-  - [Newton Fractal Shader](#newton-fractal-shader)
-  - [Lorenz attractor](#lorenz-attractor)
-  - [Blender Vector Fields](#blender-vector-fields)
-- [Games](#games)
-  - [Worst Tank](#worst-tankhttpspacchuitchioworsttank)
-  - [Torch Runner](#torch-runnerhttpspacchuitchiotorch-runner)
-- [Web dev](#web-dev)
-  - [Fourier Epicycle Drawing (~ inspired from 3b1b and Coding train )](#fourier-epicycle-drawing--inspired-from-3b1b-and-coding-train-httpsoldprashantnookinprojectswebrunfouriercirclesreindexhtml)
-  - [College project portal \& Result parser](#college-project-portal--result-parserhttpsenigmahubaceherokuappcom)
-
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+disableShare: true
 ---
 
 # Projects

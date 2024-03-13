@@ -2,6 +2,9 @@
 title: "Worst Tank Project"
 date: 2020-06-02T16:41:20+05:30
 draft: false
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+disableShare: true
 ---
 
 ++++ This post is mirrored from [here](https://vonneumannscientia.pythonanywhere.com/post/22/)

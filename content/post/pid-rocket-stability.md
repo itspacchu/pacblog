@@ -2,6 +2,9 @@
 title: "Rocket PID Stability"
 date: 2022-03-21T01:38:32+05:30
 draft: false
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+disableShare: true
 ---
  
 Hello everyone!

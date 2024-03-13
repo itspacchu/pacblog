@@ -2,6 +2,9 @@
 title: "Inverse Kinematics"
 date: 2020-07-30T19:39:31+05:30
 draft: false
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+disableShare: true
 ---
 
 ++++ This post is mirrored from [here](https://vonneumannscientia.pythonanywhere.com/post/25/)

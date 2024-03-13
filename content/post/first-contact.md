@@ -2,6 +2,9 @@
 title: "First Contact"
 date: 2022-01-09T03:12:07+05:30
 draft: false
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+disableShare: true
 ---
 
 # First-ish contact
