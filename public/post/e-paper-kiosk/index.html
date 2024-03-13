@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>E Paper Kiosk | Prashant&#39;s Nook</title>
+<meta name="keywords" content="">
+<meta name="description" content="Greetings everyone,
+Recently I have been interning as a Research Intern at IIIT Hyderabad in Smart City Research Center.
+this is the very first photo I took inside.. and yea I know my camera glitched up*
+It&rsquo;s been really fun working with cool stuff and having access to makers lab, which is an absolute Hardware haven. I&rsquo;ve worked on some basic projects with neopixels and stuff which I&rsquo;ve already worked with at my home with the TV ambilight setup with prismatik and Adalight FastLED.">
+<meta name="author" content="Prashant N">
+<link rel="canonical" href="/post/e-paper-kiosk/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="E Paper Kiosk" />
+<meta property="og:description" content="Greetings everyone,
+Recently I have been interning as a Research Intern at IIIT Hyderabad in Smart City Research Center.
+this is the very first photo I took inside.. and yea I know my camera glitched up*
+It&rsquo;s been really fun working with cool stuff and having access to makers lab, which is an absolute Hardware haven. I&rsquo;ve worked on some basic projects with neopixels and stuff which I&rsquo;ve already worked with at my home with the TV ambilight setup with prismatik and Adalight FastLED." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/e-paper-kiosk/" />
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/37984032" />
+<meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-08-28T12:58:29+05:30" />
+<meta property="article:modified_time" content="2022-08-28T12:58:29+05:30" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/37984032" />
+<meta name="twitter:title" content="E Paper Kiosk"/>
+<meta name="twitter:description" content="Greetings everyone,
+Recently I have been interning as a Research Intern at IIIT Hyderabad in Smart City Research Center.
+this is the very first photo I took inside.. and yea I know my camera glitched up*
+It&rsquo;s been really fun working with cool stuff and having access to makers lab, which is an absolute Hardware haven. I&rsquo;ve worked on some basic projects with neopixels and stuff which I&rsquo;ve already worked with at my home with the TV ambilight setup with prismatik and Adalight FastLED."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "/post/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "E Paper Kiosk",
+      "item": "/post/e-paper-kiosk/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "E Paper Kiosk",
+  "name": "E Paper Kiosk",
+  "description": "Greetings everyone,\nRecently I have been interning as a Research Intern at IIIT Hyderabad in Smart City Research Center.\nthis is the very first photo I took inside.. and yea I know my camera glitched up*\nIt\u0026rsquo;s been really fun working with cool stuff and having access to makers lab, which is an absolute Hardware haven. I\u0026rsquo;ve worked on some basic projects with neopixels and stuff which I\u0026rsquo;ve already worked with at my home with the TV ambilight setup with prismatik and Adalight FastLED.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Greetings everyone,\nRecently I have been interning as a Research Intern at IIIT Hyderabad in Smart City Research Center.\nthis is the very first photo I took inside.. and yea I know my camera glitched up*\nIt’s been really fun working with cool stuff and having access to makers lab, which is an absolute Hardware haven. I’ve worked on some basic projects with neopixels and stuff which I’ve already worked with at my home with the TV ambilight setup with prismatik and Adalight FastLED.\nAnyway coming to my current project here, Recently we were planning on erecting bunch of Smart Lamps Throughout campus. (here’s my beautiful artistic rendition )\nYou see that e-paper display right there! yes, That’s what I was tinkering with for the last few weeks and boy the display is gorgeous.\nThe main plan involves displaying essential data on lamp post which is also visible in broad daylight, Since e-paper display uses external light source to diffuse the screen contents rather than relying on backlight or self emissive nature of LEDs and OLEDs, This is perfect for this type of application.\nElectronic Paper Display So what the heck is Electronic Paper display. For all the folks who used/seen a kindle its basically that.\nInstead of traditional Pixels with Red Blue Green pixels lighting up in a matrix to form a screen , E-paper has charged balls which move in a fluid to give us the changable content of a screen.\nLED display vs E-paper There’s this company Waveshare which makes cool little hats for raspberry pi along with big E-paper displays which work by SPI. They are pretty expensive around 5000 INR just for a 800 x 480 7 inch display.\nhere’s how the raw display module looks like.. pretty gorgeous on itself.\nHere is some tests with using the examples to render images on the panel (notice the induvidual dots instead of having grayscale values ).\nThe first limitation I kinda faced when working with this panel is … the display is 1 bit color!\nDigital Color Color in digital medium is represented in bits, Usually the images you see are 24 bit. $$ 3 * 8 \\textrm(bit) $$\nSince e-paper display is just grayscale we only have one channel of gray values from $$ 0 \\rightarrow 1 $$ For a 8bit grayscale image we scale the normalized pixel brightness. $$ (0,1)_{\\textrm(PixelValue)} * 2^8 $$ To have the standard (0,255) Color range we usually see.\nps If you've seen my selfie in the beginning you'd have noticed the blocky image, This is due to low bit depth of the image. This is called Quantization\nSince we dont have any grayscale values in a 1 bit color display, we have to use some clever tricks to represent grayscale values at cost of display resolution.\nIf you’ve seen this display comparision we don’t really notice the induvidual Red Blue and Green Subpixels as they form different color shades, The orange you see on screen isn’t really orange but a peak of Red and half peak of Green.\nSo if you look at the spectrum you would see something like this.\nSimilar to frequency domain colors appearing as something different we have a method to show grayscale values in spatial domain.\nDithering dithering an image is a way to make an imahe appear higher fidelity than it actually is.\nSo let’s consider a simple scenario, we have 3 colors\n1 2 3 4 5 BLACK = (0,0,0) GRAY = (0.5,0.5,0.5) WHITE = (1,1,1) colors = [BLACK,GRAY,WHITE] If we directly apply the colors without any gradient it would look very discrete (Left Sphere), While if we add a bit of noise while interpolating between the colors we can get a pseudo smooth appearance (Right Sphere).\nFloyd-Steinberg Dithering This is a very cool dithering algorithm used in GIFs and many low fidelity formats to preserve detail lossy.\nI was originally planned to write my own Dithering algorithm to generate dithered bitmap (bmp) format for the Waveshare API but found out python’s pillow Python Imaging Library’s\n1 Image.convert('1') method already does basic dithering which covers my need.\nSo taking a screenshot of my website and passing it through the dithering algorithm we have\nEven the render of my head was represented really well using dithering.\nNow since this current e-ink panel supports red pigment as well I tried doing some basic point processing to fetch red values to dither and represent as well and it turned out kinda weird so we decided to completely drop using the red pigment, But it looked really cool I say it.\n1 2 3 4 5 webpage = Image.open(\"screenshot.png\").convert(\"RGB\").transpose(Image.ROTATE_90) webpage = change_contrast(webpage,100) #r = webpage.split()[0] Do the point processing for red #r.point( lambda p: 255 - (10*p) if ((p \u003e= 200) and (p \u003c 240)) else 255 ).convert(\"1\").save(\"screenshot_r.bmp\") webpage.convert(\"1\").save(\"screenshot_b.bmp\") these images are manually segmented into red and black parts\nWeb rendering? So the people here wanted the thing to be connected to WiFi so it can fetch data from onem2m server of iiith. Before my plan was to use opencv or pillow itself to completly render graphs and map and export as an image, but there was a problem.\nIf someone want’s to update the layout or want to completly change how it looks… they have to redo the whole image generation part again, So why not go the Electron route and just render a webpage, this way it’s more powerful as it uses HTML+CSS to markup the layout.\nBy calling chrome headless mode\n1 subprocess.run(['chromium','--headless','--disable-gpu','--screenshot','--window-size=480,800',url]) It was possible to export a screenshot of the webpage which can be easily converted and displayed.\nEnclosure Design We wanted to place the whole e-ink panel inside the metal chassy of the lamp post so I had to come up with a way to put the panel and all the electronics inside the post.\nThe first iteration of design included a basic box where the display can easily slide through… yea sliding through is a very very stupid idea.\nThe display broke as it was sliding inside and that was a very expensive mistake! (not gonna elaborate on how much I thought I was gonna be fired! )\nHere’s a new design which is yet to be printed.\nFinal Assembly So after designing a whole enclosure this is how it finally fits in all together. We were extremely on time crunch as people from Wi-SUN were coming in a week for evaluation, After giving it a finishing color coat it started giving the look of being profesionally made.\nAt this point I wanted to put everything in a docker for easy deployment incase of issues with raspberry pi or broken SD card ( I have accidentally broken some while handling this 3D print ), But again due to the time crunch I’ve decided just to pile up on systemd scripts.\nFor automating simple updates I’ve worked with github actions to create a self runner to auto update the bot.\nWhich did save alot of time by not manually ssh-ing into the pi. The worst part about the lamp enclosure is … it’s made of metal, essentially making it a faraday cage.\nA Faraday cage is a device which blocks external electromagnetic signals from passing through … Since WiFi is part of the electromagnetic spectrum, It was essentially making the communication with the main router absurdly slow. Also the fact that the only way the WiFi signal can even reach the lamp was through a window.\nI found out about the WiFi issue on the day the Wi-SUN people are supposed to come, Dr Aftab suggested we remove a small metal panel to allow WiFi in and well it worked for the demo.\nSince we were working with this lamp during the phase of KETI’s hackathon, we decided to present this alongside our main hackathon project.\nOverall it was really a fun project to work with.\nUpdate We won the Best Technology award in KETI (Korean Electronics Technlogical Institute) OneM2M hackathon. I did not expect we would pull this off.\n",
+  "wordCount" : "1340",
+  "inLanguage": "en",
+  "image": "https://avatars.githubusercontent.com/u/37984032""datePublished": "2022-08-28T12:58:29+05:30",
+  "dateModified": "2022-08-28T12:58:29+05:30",
+  "author":{
+    "@type": "Person",
+    "name": "Prashant N"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/e-paper-kiosk/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Prashant's Nook",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="/" accesskey="h" title="Prashant&#39;s Nook (Alt + H)">Prashant&#39;s Nook</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="/">Home</a>&nbsp;»&nbsp;<a href="/post/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      E Paper Kiosk
+    </h1>
+    <div class="post-meta"><span title='2022-08-28 12:58:29 +0530 +0530'>2022-08-28</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;1340 words&nbsp;·&nbsp;Prashant N
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#electronic-paper-display" aria-label="Electronic Paper Display">Electronic Paper Display</a><ul>
+                        
+                <li>
+                    <a href="#led-display-vs-e-paper" aria-label="LED display vs E-paper">LED display vs E-paper</a></li>
+                <li>
+                    <a href="#digital-color" aria-label="Digital Color">Digital Color</a></li></ul>
+                </li>
+                <li>
+                    <a href="#dithering" aria-label="Dithering">Dithering</a><ul>
+                        
+                <li>
+                    <a href="#floyd-steinberg-dithering" aria-label="Floyd-Steinberg Dithering">Floyd-Steinberg Dithering</a></li></ul>
+                </li>
+                <li>
+                    <a href="#web-rendering" aria-label="Web rendering?">Web rendering?</a></li>
+                <li>
+                    <a href="#enclosure-design" aria-label="Enclosure Design">Enclosure Design</a></li>
+                <li>
+                    <a href="#final-assembly" aria-label="Final Assembly">Final Assembly</a></li>
+                <li>
+                    <a href="#update" aria-label="Update">Update</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>Greetings everyone,</p>
+<p>Recently I have been interning as a <em>Research Intern</em> at <a href="https://www.iiit.ac.in/">IIIT Hyderabad</a> in <a href="https://smartcitylivinglab.iiit.ac.in/">Smart City Research Center</a>.</p>
+<p><img loading="lazy" src="https://lh3.googleusercontent.com/k3i2IWxxC4TZ8vaYOlIULqMhfNYNG-3alOo0LZSzCQbeRu5NVjQkTYuA336ydwjaJWYdq1b1UqlRYFowNcqSkk_tHCIVO-sNbpbS9ccEkhvVfN7RBnJ9v9D6bb3oD1g4SgFf7YHMs3w=w2400" alt="The logo"  />
+</p>
+<p><code>this is the very first photo I took inside.. and yea I know my camera glitched up*</code></p>
+<br>
+<p>It&rsquo;s been really fun working with cool stuff and having access to <a href="https://cie.iiit.ac.in/launching-makers-lab-at-cie/">makers lab</a>, which is an absolute Hardware haven.
+<img loading="lazy" src="https://i.imgur.com/prZzMEt.png" alt="Makers Lab"  />
+</p>
+<p>I&rsquo;ve worked on some basic projects with neopixels and stuff which I&rsquo;ve already worked with at my home with the TV ambilight setup with prismatik and Adalight FastLED.</p>
+<hr>
+<p>Anyway coming to my current project here, Recently we were planning on erecting bunch of <strong>Smart Lamps</strong> Throughout campus. (here&rsquo;s my beautiful artistic rendition )</p>
+<p><img loading="lazy" src="https://user-images.githubusercontent.com/37984032/187063985-726e0ae3-dddd-4375-baf9-73e40c492364.png" alt="image"  />
+</p>
+<p>You see that e-paper display right there! yes, That&rsquo;s what I was tinkering with for the last few weeks and boy the display is gorgeous.</p>
+<p>The main plan involves displaying <strong>essential data</strong> on lamp post which is also visible in broad daylight, Since e-paper display uses external light source to diffuse the screen contents rather than relying on backlight or self emissive nature of LEDs and OLEDs, This is perfect for this type of application.</p>
+<h2 id="electronic-paper-display">Electronic Paper Display<a hidden class="anchor" aria-hidden="true" href="#electronic-paper-display">#</a></h2>
+<p>So what the heck is Electronic Paper display. For all the folks who used/seen a kindle its basically that.</p>
+<p><img loading="lazy" src="https://user-images.githubusercontent.com/37984032/187064057-574197ec-dea7-445f-bb68-e155b5ba19b5.png" alt="kindle is cool"  />
+</p>
+<p>Instead of traditional Pixels with Red Blue Green pixels lighting up in a matrix to form a screen , E-paper has charged balls which move in a fluid to give us the changable content of a screen.</p>
+<h3 id="led-display-vs-e-paper">LED display vs E-paper<a hidden class="anchor" aria-hidden="true" href="#led-display-vs-e-paper">#</a></h3>
+<p><img loading="lazy" src="https://user-images.githubusercontent.com/37984032/187065679-e7e0af0a-3319-42ad-bae2-37bf20a04e15.png" alt="image"  />
+</p>
+<p>There&rsquo;s this company Waveshare which makes cool little hats for raspberry pi along with big E-paper displays which work by SPI. They are pretty expensive around 5000 INR just for a <code>800 x 480 7 inch display</code>.</p>
+<p>here&rsquo;s how the raw display module looks like.. pretty gorgeous on itself.</p>
+<p><img loading="lazy" src="https://user-images.githubusercontent.com/37984032/187064567-78b6c651-f8b5-422d-8666-fce992a91314.png" alt="epaper raw display"  />
+</p>
+<p>Here is some tests with using the examples to render images on the panel (notice the induvidual dots instead of having grayscale values ).</p>
+<p><img loading="lazy" src="https://user-images.githubusercontent.com/37984032/187064573-0f9ce444-116e-4ef1-9877-423fcaddf6f6.png" alt="kaguya"  />
+</p>
+<p>The first limitation I kinda faced when working with this panel is &hellip; the display is 1 bit color!</p>
+<h3 id="digital-color">Digital Color<a hidden class="anchor" aria-hidden="true" href="#digital-color">#</a></h3>
+<p>Color in digital medium is represented in bits, Usually the images you see are 24 bit.
+$$ 3 * 8 \textrm(bit) $$</p>
+<p>Since e-paper display is just grayscale we only have one channel of gray values from $$ 0 \rightarrow 1 $$
+For a 8bit grayscale image we scale the normalized pixel brightness.
+$$ (0,1)_{\textrm(PixelValue)} * 2^8 $$
+To have the standard (0,255) Color range we usually see.</p>
+<p><img loading="lazy" src="https://user-images.githubusercontent.com/37984032/187065064-32490fa5-bbe2-4f30-ad83-83137c4e3ca0.png" alt="image"  />
+</p>
+<p><img loading="lazy" src="https://user-images.githubusercontent.com/37984032/187065395-d72bee1e-9129-4d30-97db-17b8e9048828.png" alt="image"  />
+</p>
+<p><code>ps If you've seen my selfie in the beginning you'd have noticed the blocky image, This is due to low bit depth of the image. This is called Quantization</code></p>
+<hr>
+<p>Since we dont have any grayscale values in a 1 bit color display, we have to use some clever tricks to represent grayscale values at cost of display resolution.</p>
+<p>If you&rsquo;ve seen this <a href="/post/e-paper-kiosk/#led-display-vs-e-paper">display comparision</a> we don&rsquo;t really notice the induvidual Red Blue and Green <em>Subpixels</em> as they form different color shades, The orange you see on screen isn&rsquo;t really orange but a peak of Red and half peak of Green.</p>
+<p>So if you look at the spectrum you would see something like this.</p>
+<p><img loading="lazy" src="https://user-images.githubusercontent.com/37984032/187065666-6b9625be-a9c8-4cda-ac5d-b384c7d93d24.png" alt="image"  />
+</p>
+<p>Similar to frequency domain colors appearing as something different we have a method to show grayscale values in spatial domain.</p>
+<h2 id="dithering">Dithering<a hidden class="anchor" aria-hidden="true" href="#dithering">#</a></h2>
+<p>dithering an image is a way to make an imahe appear higher fidelity than it actually is.</p>
+<p>So let&rsquo;s consider a simple scenario, we have 3 colors</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">BLACK</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">GRAY</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">WHITE</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="n">BLACK</span><span class="p">,</span><span class="n">GRAY</span><span class="p">,</span><span class="n">WHITE</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>If we directly apply the colors without any gradient it would look very discrete (Left Sphere), While if we add a bit of noise while interpolating between the colors we can get a pseudo smooth appearance (Right Sphere).</p>
+<p><img loading="lazy" src="https://user-images.githubusercontent.com/37984032/187075232-43e41aa7-d069-4fb8-b806-7cd6681f18e3.png" alt="renderdither"  />
+</p>
+<h3 id="floyd-steinberg-dithering">Floyd-Steinberg Dithering<a hidden class="anchor" aria-hidden="true" href="#floyd-steinberg-dithering">#</a></h3>
+<p><a href="https://en.wikipedia.org/wiki/Floyd%E2%80%93Steinberg_dithering"><img loading="lazy" src="https://user-images.githubusercontent.com/37984032/187065866-3b94f12d-a0ca-4aba-a2ec-262c0807f03e.png" alt="image"  />
+</a></p>
+<p>This is a very cool dithering algorithm used in GIFs and many low fidelity formats to preserve detail lossy.</p>
+<hr>
+<p>I was originally planned to write my own Dithering algorithm to generate dithered bitmap (bmp) format for the Waveshare API but found out python&rsquo;s pillow <em>Python Imaging Library</em>&rsquo;s</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Image</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>method already does basic dithering which covers my need.</p>
+<p>So taking a screenshot of my <a href="https://0x45.in">website</a> and passing it through the dithering algorithm we have</p>
+<p><img loading="lazy" src="https://user-images.githubusercontent.com/37984032/187064034-a15e3b09-87d4-44ec-bcc4-29ded65cc8a5.png" alt="thebeauty"  />
+</p>
+<p>Even the render of my head was represented really well using dithering.</p>
+<p>Now since this current e-ink panel supports red pigment as well I tried doing some basic point processing to fetch red values to dither and represent as well and it turned out kinda weird so we decided to completely drop using the red pigment, But it looked really cool I say it.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">webpage</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&#34;screenshot.png&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s2">&#34;RGB&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ROTATE_90</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">webpage</span> <span class="o">=</span> <span class="n">change_contrast</span><span class="p">(</span><span class="n">webpage</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#r = webpage.split()[0] Do the point processing for red</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#r.point( lambda p: 255 - (10*p) if ((p &gt;= 200) and (p &lt; 240)) else 255 ).convert(&#34;1&#34;).save(&#34;screenshot_r.bmp&#34;)</span>
+</span></span><span class="line"><span class="cl"><span class="n">webpage</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s2">&#34;1&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&#34;screenshot_b.bmp&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p><img loading="lazy" src="https://user-images.githubusercontent.com/37984032/187075516-5f8c2c27-4bdf-4ce9-ab77-a2c03471e40c.png" alt="image"  />
+</p>
+<p><img loading="lazy" src="https://user-images.githubusercontent.com/37984032/187075567-d2561fab-942e-4c96-987c-6484c45e176f.png" alt="image"  />
+</p>
+<p><code>these images are manually segmented into red and black parts</code></p>
+<hr>
+<h2 id="web-rendering">Web rendering?<a hidden class="anchor" aria-hidden="true" href="#web-rendering">#</a></h2>
+<p>So the people here wanted the thing to be connected to WiFi so it can fetch data from <a href="">onem2m server</a> of iiith. Before my plan was to use opencv or pillow itself to completly render graphs and map and export as an image, but there was a problem.</p>
+<p>If someone want&rsquo;s to update the layout or want to completly change how it looks&hellip; they have to redo the whole image generation part again, So why not go the Electron route and just render a webpage, this way it&rsquo;s more powerful as it uses HTML+CSS to markup the layout.</p>
+<p>By calling chrome headless mode</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="s1">&#39;chromium&#39;</span><span class="p">,</span><span class="s1">&#39;--headless&#39;</span><span class="p">,</span><span class="s1">&#39;--disable-gpu&#39;</span><span class="p">,</span><span class="s1">&#39;--screenshot&#39;</span><span class="p">,</span><span class="s1">&#39;--window-size=480,800&#39;</span><span class="p">,</span><span class="n">url</span><span class="p">])</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>It was possible to export a screenshot of the webpage which can be easily converted and displayed.</p>
+<h2 id="enclosure-design">Enclosure Design<a hidden class="anchor" aria-hidden="true" href="#enclosure-design">#</a></h2>
+<p>We wanted to place the whole e-ink panel inside the metal chassy of the lamp post so I had to come up with a way to put the panel and all the electronics inside the post.</p>
+<p>The first iteration of design included a basic box where the display can easily slide through&hellip; yea sliding through is a very very stupid idea.</p>
+<p>The display broke as it was sliding inside and that was a very expensive mistake! <del>(not gonna elaborate on how much I thought I was gonna be fired! )</del></p>
+<p><img loading="lazy" src="https://user-images.githubusercontent.com/37984032/187075841-e8d2b4a1-4f9c-4cfb-a0a5-1e27122749dc.png" alt="image"  />
+</p>
+<p>Here&rsquo;s a new design which is yet to be printed.</p>
+<p><img loading="lazy" src="https://user-images.githubusercontent.com/37984032/187075943-89e56e54-8a8e-4d3a-a17e-94be41b67768.png" alt="image"  />
+</p>
+<h2 id="final-assembly">Final Assembly<a hidden class="anchor" aria-hidden="true" href="#final-assembly">#</a></h2>
+<p>So after designing a whole enclosure this is how it finally fits in all together. We were extremely on time crunch as people from Wi-SUN were coming in a week for evaluation, After giving it a finishing color coat it started giving the look of being profesionally made.</p>
+<p><img loading="lazy" src="https://cdn.discordapp.com/attachments/756467788398198894/1047156877592633344/unknown.png" alt="image"  />
+</p>
+<p>At this point I wanted to put everything in a docker for easy deployment incase of issues with raspberry pi or broken SD card ( I have accidentally broken some while handling this 3D print ), But again due to the time crunch I&rsquo;ve decided just to pile up on systemd scripts.</p>
+<p>For automating simple updates I&rsquo;ve worked with github actions to create a self runner to auto update the bot.</p>
+<p><img loading="lazy" src="https://cdn.discordapp.com/attachments/756467788398198894/1047158589149687829/image.png" alt="image"  />
+</p>
+<p>Which did save alot of time by not manually ssh-ing into the pi. The worst part about the lamp enclosure is &hellip; it&rsquo;s made of metal, essentially making it a faraday cage.</p>
+<p>A Faraday cage is a device which blocks external electromagnetic signals from passing through &hellip; Since WiFi is part of the electromagnetic spectrum, It was essentially making the communication with the main router absurdly slow. Also the fact that the only way the WiFi signal can even reach the lamp was through a window.</p>
+<p><img loading="lazy" src="https://cdn.discordapp.com/attachments/756467788398198894/1047161607567982624/image.png" alt="image"  />
+</p>
+<p>I found out about the WiFi issue on the day the Wi-SUN people are supposed to come, <a href="https://www.iiit.ac.in/people/faculty/aftab.hussain/">Dr Aftab</a> suggested we remove a small metal panel to allow WiFi in and well it worked for the demo.</p>
+<p>Since we were working with this lamp during the phase of KETI&rsquo;s hackathon, we decided to present this alongside our main hackathon project.</p>
+<iframe width=100% src="https://www.youtube.com/embed/zbXav_wcGhQ" title="KETI OneM2M Hackathon project submission | #TeamAthena" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Overall it was really a fun project to work with.</p>
+<h2 id="update">Update<a hidden class="anchor" aria-hidden="true" href="#update">#</a></h2>
+<p>We won the Best Technology award in KETI (Korean Electronics Technlogical Institute) OneM2M hackathon.
+I did not expect we would pull this off.</p>
+<p><img loading="lazy" src="https://user-images.githubusercontent.com/37984032/215316227-4b653cf5-0773-4e5d-93fc-25c62462481e.jpg" alt="Team Athena"  />
+</p>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="/post/update/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Update, I am alive</span>
+  </a>
+  <a class="next" href="/post/pid-rocket-stability/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Rocket PID Stability</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="/">Prashant&#39;s Nook</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
