@@ -13,6 +13,8 @@ RUN git clone --recurse-submodules  ${GIT_URL} .  && \
     curl -o /etc/nginx/nginx.conf "https://gist.githubusercontent.com/itspacchu/bda611d49efe8c3d534a6a22f5acb972/raw/e32acaf9361fa9716c3672d50d556fe090ffc6b0/nginx.conf" && \
     hugo && cp -r ./public/* /usr/share/nginx/html
 
-RUN curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64.deb && dpkg -i cloudflared.deb && cloudflared service install ${CLOUDFLARED_SECRET}
+RUN mkdir -p /usr/share/nginx/html/cdn
+
+RUN curl https://gist.githubusercontent.com/itspacchu/84acb941e1bb4c460d241db19c1db3e3/raw/34235845d306bfc0bbf1f3a21a4bfd04da4f4c19/resumebase64 | base64 -d >> /usr/share/nginx/html/cdn/resume.pdf
 
 
