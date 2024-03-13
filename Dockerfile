@@ -5,10 +5,6 @@ LABEL name="Nandipati Prashant"
 
 ENV GIT_URL="https://github.com/itspacchu/pacblog"
 
-ARG CLOUDFLARED_SECRET=""
-ENV CLOUDFLARED_SECRET=${CLOUDFLARED_SECRET}
-
-
 RUN apt update && apt upgrade -y && apt install wget git -y && wget https://github.com/gohugoio/hugo/releases/download/v0.110.0/hugo_0.110.0_linux-$(dpkg --print-architecture).deb && dpkg -i hugo_0.110.0_linux-$(dpkg --print-architecture).deb  
 
 WORKDIR /runtime
