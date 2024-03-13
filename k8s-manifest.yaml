@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: blog
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: pacblog
+    type: blog
+  name: pacblog
+  namespace: blog
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pacblog
+  template:
+    metadata:
+      labels:
+        app: pacblog
+    spec:
+      containers:
+      - image: registry.gitlab.com/itspacchu/pacblog:arm
+        name: pacblog
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: pacblog-service
+  name: pacblog-service
+  namespace: blog
+spec:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: pacblog
+  type: NodePort
+status:
+  loadBalancer: {}

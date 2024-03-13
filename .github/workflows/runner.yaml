@@ -46,5 +46,4 @@ jobs:
     steps:
       - name: Run Uploaded Docker Image
         run: |
-          docker pull registry.gitlab.com/itspacchu/pacblog:arm
-          docker run -d --name pacblog-arm registry.gitlab.com/itspacchu/pacblog:arm
+          kubectl apply -f ./k8s-manifest.yaml
