@@ -48,8 +48,10 @@ params:
         url: "about/"
       - name: "Projects"
         url: "projects/"
-      - name: "Blog"
+      - name: "Posts"
         url: "posts/"
+      - name: "Vlogs"
+        url: "vlogs/"
       - name: "Resume"
         url: "/cdn/resume.pdf"
   socialIcons:
@@ -77,6 +79,9 @@ menu:
     - identifier: "posts"
       name: "Posts"
       url: "/posts/"
+    - identifier: "vlogs"
+      name: "Vlogs"
+      url: "/vlogs/"
       weight: 3
     - identifier: "search"
       name: "Search"

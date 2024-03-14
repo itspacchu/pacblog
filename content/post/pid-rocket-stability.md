@@ -14,7 +14,7 @@ Last semester we had a course on Control Systems, where we learned about control
 The very first time I was introduced to robotics was back in 5th grade's Summer Camp, where we had to build robots like Line following and Path navigating.
  
 <center>
-<img src="https://media.discordapp.net/attachments/852930321493655563/955205374066192414/facebook_nextlearn.png" width=40%>
+<img src="https://github.com/itspacchu/static_dump/assets/37984032/f78ef9bf-ecb2-4aa9-97d5-62c94e740cda" width=40%>
 </center>
  
  
@@ -34,7 +34,7 @@ $$ \delta \textrm{  is the error between the desired value and the actual value.
  
 That's a heck of a lot of math, but it's really simple to understand.
  
-<img src="https://media.discordapp.net/attachments/852930321493655563/955211531807772733/unknown.png" width=75%>
+<img src="https://github.com/itspacchu/static_dump/assets/37984032/aff272d4-48c4-4f90-8b1e-168fb5dc3899" width=75%>
  
 Now if you're any intelligent living specimen, It'll be obvious to move the needle to the right by +23 degrees, and viola the error is 0.
  
@@ -42,13 +42,13 @@ This is the _proportional_ controller, which is the simplest of the three. It si
  
 $$ F_{P} = k_p * \delta $$
  
-<img src="https://media.discordapp.net/attachments/852930321493655563/955216292556701736/cool_gif_right.gif" width=75%>
+<img src="https://github.com/itspacchu/static_dump/assets/37984032/52a2f2e0-45fe-445b-8492-14a3a164df8b" width=75%>
  
 Now we can see the error is oscillating from -23 deg to +23 deg, Which is where the derivative comes in, which crushes down the oscillating errors.
  
 $$F_{D} = K_d * \frac{d}{dt} \delta$$
  
-<img src="https://media.discordapp.net/attachments/852930321493655563/955335473990074418/unknown.png?width=581&height=506" width=75%>
+<img src="https://github.com/itspacchu/static_dump/assets/37984032/fda22c9f-63a3-4712-9f13-c0b1f8b996e4" width=75%>
  
 Here there's a DC error that isn't oscillatory nor linear, For this DC error, we need to use an Integral controller.
  
@@ -61,13 +61,13 @@ The Rocket is a simple rigid body, where torque is applied to the rocket to rota
  
 The Thrust force can be rotated to change the direction of the force being applied, this is Thrust Vectoring.
  
-<img src="https://media.discordapp.net/attachments/852930321493655563/955337632018235433/unknown.png" width=75%>
+<img src="https://github.com/itspacchu/static_dump/assets/37984032/06f27c3d-2243-4504-b61a-91a87302f706" width=75%>
  
 For the simplicity of control, Rocket's z rotation is locked to 0 deg.
  
 Now for any Control System, we have both Control parameters and Observer parameters. For this rocket, I've chosen the Control parameters to be the X, Y torque which is controlled by side thrusters, and the main thrust along with thrust vectoring controlled by their respective parameters, For the Observer parameters we have the Z position (Altitude) along with X, Y Rotation for keeping the rocket upright.
  
-<img src="https://media.discordapp.net/attachments/852930321493655563/955339707657646100/unknown.png" width=75%>
+<img src="https://github.com/itspacchu/static_dump/assets/37984032/a1fa9cd1-c847-451d-b622-98c92579d8ce" width=75%>
  
 Now for just settings all the PID controllers and observer parameters and tuning it just right.
  
