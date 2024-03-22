@@ -5,6 +5,7 @@ draft: false
 tag: "about"
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
+ShowToc: false
 disableShare: true
 ---
 
@@ -13,11 +14,13 @@ disableShare: true
 
 ## <div title="and other hyper intelligent species">**Greeting humans!**</div><br>
 I am Prashant, a *Electronics and Communication* Graduate.<br>
+I am currently working as a Devops Engineering, and have been CKA (Certified Kubernetes Administrator) Certified.
 I have a keen interest in Mathematical modelling, Robotics and building Electronic contraptions.
 <br>Building visualisations and interactive systems for the concepts been taught and watching them in action is the most fun part of building things.
               
 ### Interests
 
+- Homelabbing/ Selfhosting.
 - Programatical Mathematics.
 - Electronics and Robotics.
 - GameJams.
@@ -32,7 +35,11 @@ I have a keen interest in Mathematical modelling, Robotics and building Electron
 
 - [Sebastian Lague](https://www.youtube.com/c/SebastianLague)
 
+### <a href=https://anilist.co/user/pacchu/><div title="Anilist ">&#128279; Anilist</div> </a>
+
 
 ### Music
 
-![music-is-beautiful](https://www.tapmusic.net/collage.php?user=itspacchu&type=6month&size=5x5&caption=true&playcount=false)
+> Updates Live
+
+![music-is-beautiful](https://www.tapmusic.net/collage.php?user=itspacchu&type=1month&size=5x5&caption=true&playcount=true)

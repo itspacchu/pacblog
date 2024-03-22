@@ -50,8 +50,6 @@ params:
         url: "projects/"
       - name: "Posts"
         url: "posts/"
-      - name: "Vlogs"
-        url: "vlogs/"
       - name: "Resume"
         url: "/cdn/resume.pdf"
   socialIcons:
