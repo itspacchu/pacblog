@@ -7,6 +7,6 @@
 [submodule "public/projects/webrun"]
 	path = public/projects/webrun
 	url = https://github.com/itspacchu/webprojects
-[submodule "themes/themes/PaperMod"]
-	path = themes/themes/PaperMod
+[submodule "themes/PaperMod-pacblog"]
+	path = themes/PaperMod-pacblog
 	url = https://github.com/itspacchu/pacblog-hugo-PaperMod

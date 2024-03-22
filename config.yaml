@@ -1,7 +1,7 @@
 baseURL: "/"
 languageCode: "en-us"
 title: "Prashant's Nook"
-theme: "PaperMod"
+theme: "PaperMod-pacblog"
 paginate: 4
 disqusShortname: ""
 googleAnalytics: ""
