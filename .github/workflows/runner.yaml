@@ -44,6 +44,6 @@ jobs:
     needs: [GitLabRegistryPush] 
     runs-on: [self-hosted, homepi]
     steps:
-      - name: Run Uploaded Docker Image
+      - name: Run Kubernetes manifest
         run: |
-          kubectl apply -f ./k8s-manifest.yaml
+          kubectl apply -f https://raw.githubusercontent.com/itspacchu/pacblog/master/k8s-manifest.yaml
