@@ -4,9 +4,9 @@
 [submodule "private"]
 	path = private
 	url = https://github.com/itspacchu/0x45.in
-[submodule "themes/PaperMod"]
-	path = themes/PaperMod
-	url = https://github.com/adityatelange/hugo-PaperMod.git
 [submodule "public/projects/webrun"]
 	path = public/projects/webrun
 	url = https://github.com/itspacchu/webprojects
+[submodule "themes/themes/PaperMod"]
+	path = themes/themes/PaperMod
+	url = https://github.com/itspacchu/pacblog-hugo-PaperMod
