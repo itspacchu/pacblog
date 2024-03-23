@@ -22,6 +22,15 @@ spec:
       labels:
         app: pacblog
     spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - homelab
       containers:
       - image: registry.gitlab.com/itspacchu/pacblog:armv2
         imagePullPolicy: Always
@@ -35,15 +44,6 @@ spec:
       - name: cdn-volume
         hostPath:
           path: /mnt/media/extssd/cdn
-  affinity:
-    nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
-        nodeSelectorTerms:
-        - matchExpressions:
-          - key: kubernetes.io/hostname
-            operator: In
-            values:
-            - homelab
 ---
 apiVersion: v1
 kind: Service
