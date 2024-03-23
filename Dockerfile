@@ -1,4 +1,4 @@
-FROM nginx:bookworm
+FROM docker.io/library/nginx:bookworm
 
 LABEL maintainer="prashantn@riseup.net"
 LABEL name="Nandipati Prashant"
@@ -11,7 +11,11 @@ WORKDIR /runtime
 
 RUN git clone --recurse-submodules  ${GIT_URL} .
 
-RUN curl -o /etc/nginx/nginx.conf "https://gist.githubusercontent.com/itspacchu/bda611d49efe8c3d534a6a22f5acb972/raw/e32acaf9361fa9716c3672d50d556fe090ffc6b0/nginx.conf"
+#RUN curl -o /etc/nginx/nginx.conf "https://gist.githubusercontent.com/itspacchu/bda611d49efe8c3d534a6a22f5acb972/raw/e32acaf9361fa9716c3672d50d556fe090ffc6b0/nginx.conf"
+
+COPY ./nginx/nginx.conf ./nginx.conf
+
+RUN cp ./nginx.conf /etc/nginx/nginx.conf
 
 RUN hugo
 

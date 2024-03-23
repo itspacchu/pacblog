@@ -1,3 +1,4 @@
+---
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -22,10 +23,27 @@ spec:
         app: pacblog
     spec:
       containers:
-      - image: registry.gitlab.com/itspacchu/pacblog:arm
+      - image: registry.gitlab.com/itspacchu/pacblog:armv2
+        imagePullPolicy: Always
         name: pacblog
         ports:
         - containerPort: 80
+        volumeMounts:
+        - name: cdn-volume
+          mountPath: /usr/share/nginx/html/cdn
+      volumes:
+      - name: cdn-volume
+        hostPath:
+          path: /mnt/media/extssd/cdn
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: kubernetes.io/hostname
+            operator: In
+            values:
+            - homelab
 ---
 apiVersion: v1
 kind: Service
