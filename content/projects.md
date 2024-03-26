@@ -17,7 +17,7 @@ An exploratory playground to visualise nodes on iiit's onem2m server in a more o
 ![img1](https://user-images.githubusercontent.com/37984032/209670446-162e58d1-37d1-4eb8-a7e0-9530c3cb8ed0.png)
 ![img2](https://user-images.githubusercontent.com/37984032/209670658-ad529a69-609a-4f22-a14a-38ac2f52f9ba.png)
 
-<iframe width="912" height="513" src="https://www.youtube.com/embed/dA0UE7ec7F4" title="Godot Demo - IIIT University Campus &amp; IoT Nodes Demo - R&amp;D Showcase 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{{< youtube dA0UE7ec7F4 >}}
 
 ![R D_SHOWCASE_GRACE](https://user-images.githubusercontent.com/37984032/215316246-c598539b-7714-4b31-8470-d1d5ee966bf3.png)
 
@@ -37,11 +37,9 @@ Final Hosted version is available [_Gracie:iiit.ac.in_](https://smartcitylivingl
 ## [Smart Lamp post (KETI OneM2M Hackathon)](/post/e-paper-kiosk/)
 A Smart lamp post for essential data dashboard with e-paper display
 
-<center>
 
-<iframe width="912" height="513" src="https://www.youtube.com/embed/ybsFcmRora0" title="Godot 4 - PID Controller based Thrust vectored rocket controller - University demo 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{{< youtube zbXav_wcGhQ >}}
 
-</center>
 
 #### [A blog post about this on IIIT](https://blogs.iiit.ac.in/monthly_news/best-technology-award-in-keti-hackathon-2022/)
 
@@ -58,9 +56,9 @@ A Smart lamp post for essential data dashboard with e-paper display
 Using PID Controller for rocket stability.
 ![image](https://user-images.githubusercontent.com/37984032/158578453-1386a7ca-5408-45c6-9447-8d9e3743a96f.png)
 
-<center>
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ybsFcmRora0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+
+
+{{< youtube ybsFcmRora0 >}}
 
 ![Hardware implementation](https://media.discordapp.net/attachments/756467788398198894/1061167231016390707/image.png)
 > Hardware implementation was unfortunately not finished due to college indirectly stealing the hardware before submission deadline.
@@ -133,11 +131,10 @@ Solving complex cubic polynomial using newton raphson method
 ---
 
 <br>
+
 ## Lorenz attractor
 
-<center>
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/-uNLF6hfHA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+{{< youtube uNLF6hfHA4 >}}
 
 <br>
 
@@ -147,9 +144,7 @@ Solving complex cubic polynomial using newton raphson method
 
 ## Blender Vector Fields
 
-<center>
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/tYsuAPHKqu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+{{< youtube tYsuAPHKqu0 >}}
 
 <br>
 

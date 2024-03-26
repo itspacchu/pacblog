@@ -17,6 +17,9 @@ The new work being a corporate job, I was trying to learn how to fix my schedule
 
 So 2023 was entirely spent on learning alot of things related to my new work field such as `Kubernetes`, `Terraform`, `Ansible` and other stuff. So yeah... pretty cool stuff.
 
+So 2024 was me basically realising how much time I have wasted due to lack of motivation, [I found out this happens due to low Vitamin D](https://www.psychologytoday.com/us/blog/the-breakthrough-depression-solution/201111/psychological-consequences-vitamin-d-deficiency).
+I have decided to change and have gotten my first certification CKA :D
+
 ### Vlogging adventures
 
 > [Checkout the seperate page on vlogs](/vlogs)
