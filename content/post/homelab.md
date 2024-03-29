@@ -2,6 +2,8 @@
 title: "Homelab"
 date: 2024-03-23T13:26:33Z
 draft: false
+cover:
+  image: https://github.com/itspacchu/static_dump/assets/37984032/e55bf6d1-bd4c-476b-966b-6ec3d46237ed
 ---
 
 Greetings paclings,
@@ -118,9 +120,7 @@ I would probably update my blog if any new things I might add to this so...
 
 ![image](https://github.com/itspacchu/static_dump/assets/37984032/6263c3a5-5376-42b7-934d-c341e9b5557d)
 
-> 2024
-![image](https://github.com/itspacchu/static_dump/assets/37984032/adc726c4-74e7-4e91-acdf-f80c88163e4d)
 
-PS I was listening to this song while writing this :D
+PS I was listening to this song while writing this :D~
 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6b8W8vWuMJTo2UAj9LJiaA?si=3bc312d6a4404f75?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
