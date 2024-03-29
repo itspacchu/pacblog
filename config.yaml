@@ -1,8 +1,8 @@
-baseURL: "/"
+baseURL: "https://prashantnook.in"
 languageCode: "en-us"
 title: "Prashant's Nook"
 theme: "PaperMod-pacblog"
-paginate: 4
+paginate: 3
 disqusShortname: ""
 googleAnalytics: ""
 
@@ -49,7 +49,7 @@ params:
       - name: "Projects"
         url: "projects/"
       - name: "Posts"
-        url: "posts/"
+        url: "post/"
       - name: "Resume"
         url: "/cdn/resume.pdf"
   socialIcons:
@@ -76,15 +76,16 @@ menu:
       weight: 2
     - identifier: "posts"
       name: "Posts"
-      url: "/posts/"
+      url: "/post/"
+      weight: 3
     - identifier: "vlogs"
       name: "Vlogs"
       url: "/vlogs/"
-      weight: 3
+      weight: 4
     - identifier: "search"
       name: "Search"
       url: "/search/"
-      weight: 4
+      weight: 5
 
 taxonomies:
   category: "categories"

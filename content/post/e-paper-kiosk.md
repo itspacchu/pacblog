@@ -5,7 +5,8 @@ draft: false
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 disableShare: true
-image: "https://user-images.githubusercontent.com/37984032/187063985-726e0ae3-dddd-4375-baf9-73e40c492364.png"
+cover:
+    image: "https://user-images.githubusercontent.com/37984032/187063985-726e0ae3-dddd-4375-baf9-73e40c492364.png"
 ---
 
 Greetings everyone,
