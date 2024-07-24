@@ -32,7 +32,7 @@ spec:
                 values:
                 - homelab
       containers:
-      - image: registry.gitlab.com/itspacchu/pacblog:armv3
+      - image: registry.gitlab.com/itspacchu/pacblog:latest
         imagePullPolicy: Always
         name: pacblog
         ports:

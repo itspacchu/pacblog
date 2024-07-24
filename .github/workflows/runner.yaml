@@ -5,29 +5,18 @@ on:
 
 jobs:
   GitLabRegistryPush:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted]
     steps:
       - uses: actions/checkout@v1
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
       - name: Login into docker
-        run: docker login -u itspacchu -p ${{ secrets.GITLAB_PASSWORD }} registry.gitlab.com/itspacchu/pacblog:arm
+        run: docker login -u itspacchu -p ${{ secrets.GITLAB_PASSWORD }} registry.gitlab.com/itspacchu/pacblog
       - name: Build and Push
-        env:
-          CLOUDFLARED_SECRET: ${{ secrets.CLOUDFLARED_SECRET }}
-        run: |
-          docker buildx build \
-            --platform=linux/arm64 \
-            --build-arg CLOUDFLARED_SECRET="${CLOUDFLARED_SECRET}" \
-            -t registry.gitlab.com/itspacchu/pacblog:arm \
-            --push .
+        run: docker build -t registry.gitlab.com/itspacchu/pacblog:arm${{ github.run_number }} --push .
 
   RunOnHomePi:
     needs: [GitLabRegistryPush] 
-    runs-on: [self-hosted, homepi]
+    runs-on: [self-hosted]
     steps:
-      - name: Run Kubernetes manifest
+      - name: Run Kubernetes manifest on selfhosted machine
         run: |
-          kubectl apply -f https://raw.githubusercontent.com/itspacchu/pacblog/master/k8s-manifest.yaml
+          curl https://raw.githubusercontent.com/itspacchu/pacblog/master/k8s-manifest.yaml | sed "s/latest/arm${{ github.run_number }}/g" | kubectl apply -f -
