@@ -4,6 +4,11 @@ date: 2024-03-14T15:50:12Z
 draft: false
 ---
 
+# Malaysia & Singapore 
+
+{{< youtube nsA2USknbQM >}}
+
+
 # Bengaluru
 
 ## Bengaluru Diary #1
