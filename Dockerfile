@@ -23,6 +23,6 @@ RUN cp -r ./public/* /usr/share/nginx/html
 
 RUN mkdir -p /usr/share/nginx/html/cdn
 
-RUN curl https://gist.githubusercontent.com/itspacchu/84acb941e1bb4c460d241db19c1db3e3/raw/34235845d306bfc0bbf1f3a21a4bfd04da4f4c19/resumebase64 | base64 -d >> /usr/share/nginx/html/cdn/resume.pdf
+RUN curl https://gist.githubusercontent.com/itspacchu/84acb941e1bb4c460d241db19c1db3e3/raw/54893a4f707ddac5397ab799424ff569a28092e1/resumebase64 | base64 -d >> /usr/share/nginx/html/cdn/resume.pdf
 
 
