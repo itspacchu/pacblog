@@ -1,5 +1,5 @@
 ---
-title: "Update, I am alive"
+title: "Update, the 2024 Manifesto"
 date: 2024-03-13T18:32:47Z
 draft: false
 ---
@@ -59,8 +59,9 @@ Currently I have a bunch of plans which I want to try and bunch of abandonned pr
 - Learning Golang
    >  Since Most of all the tools and stuff in devops are written in golang I'd like be able to contribute to some of them in future
 
-- Out of India trips ( Hong Kong )
+- Out of India trips ( ~~Hong Kong~~ Singapore & Malaysia )
     > I want to explore places outside India , Recently I've met an amazingly cool person who I would love to meet and explore the Urbanscape of Hong Kong and Shenzen (Electornics bby)
+
 
 ### Bunch of abandonned projects
 
@@ -74,3 +75,26 @@ Currently I have a bunch of plans which I want to try and bunch of abandonned pr
     > I've always wanted to build a multiplayer game, I would like to learn how networking works in depth mainly in multiplayer games.
 
 Thats all I've got for now, Stay tuned for the homelab blog post or video :>
+
+---
+
+> Update 31st December 2024
+
+## What have I done in 2024
+
+#TODO
+
+- I am starting to love golang and worked on it alot, Absolutely love golang and want to squeeze and cuddle the gophers
+
+- I have went to Singapore and Malaysia :D
+
+![image](https://github.com/user-attachments/assets/14e5e2e7-a44e-453b-b86a-a93675f74c16)
+
+
+- Abandoned projects still stay abandonned ;-; hopefully 2025 is my year.
+
+Happy new year 2025 :D
+
+
+P.S Keep a lookout for 2025 manifesto C:
+---

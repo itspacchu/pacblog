@@ -2,16 +2,15 @@ baseURL: "https://prashantnook.in"
 languageCode: "en-us"
 title: "Prashant's Nook"
 theme: "PaperMod-pacblog"
-paginate: 3
+paginate: 4
 disqusShortname: ""
 googleAnalytics: ""
 
 author:
-  name: "Prashant N"
+  name: "Prashant Nandipati"
 
 params:
   author: "Prashant N"
-  dateFormat: "2006-01-02"
   paginationSinglePost: true
   style: "auto"
   readMore: true
@@ -36,7 +35,7 @@ params:
   ShowCodeCopyButtons: true
   ShowToc: true
   images:
-    - "https://avatars.githubusercontent.com/u/37984032"
+    - "https://github.com/user-attachments/assets/5315feb1-d53b-4f96-b158-fe9f199fd226"
   profileMode:
     enabled: true
     title: "Prashant's Nook"
@@ -50,7 +49,7 @@ params:
         url: "projects/"
       - name: "Posts"
         url: "post/"
-      - name: "Resume"
+      - name: "Résumé"
         url: "/cdn/resume.pdf"
   socialIcons:
     - name: "linkedin"

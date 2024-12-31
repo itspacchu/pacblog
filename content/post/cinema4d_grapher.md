@@ -1,6 +1,6 @@
 ---
 title: "Cinema4d Grapher"
-date: 2020-03-28T20:15:42:36+05:30
+date: 2020-03-28
 draft: false
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true

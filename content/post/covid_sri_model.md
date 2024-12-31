@@ -1,6 +1,6 @@
 ---
 title: "Covid SRI Model"
-date: 2020-07-08T20:14:08:27+05:30
+date: 2020-07-08
 draft: false
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
