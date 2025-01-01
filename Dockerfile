@@ -11,6 +11,8 @@ WORKDIR /runtime
 
 RUN git clone --recurse-submodules  ${GIT_URL} .
 
+RUN git pull origin
+
 #RUN curl -o /etc/nginx/nginx.conf "https://gist.githubusercontent.com/itspacchu/bda611d49efe8c3d534a6a22f5acb972/raw/e32acaf9361fa9716c3672d50d556fe090ffc6b0/nginx.conf"
 
 COPY ./nginx/nginx.conf ./nginx.conf
