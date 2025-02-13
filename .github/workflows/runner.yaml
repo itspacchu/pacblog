@@ -26,9 +26,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Login into docker
-        run: docker login -u itspacchu -p ${{ secrets.GITLAB_PASSWORD }} registry.gitlab.com/itspacchu/pacblog
+        run: podman login -u itspacchu -p ${{ secrets.GITLAB_PASSWORD }} registry.gitlab.com/itspacchu/pacblog
       - name: Build and Push
-        run: docker build -t registry.gitlab.com/itspacchu/pacblog:arm${{ github.run_number }} --push .
+        run: podman build -t registry.gitlab.com/itspacchu/pacblog:arm${{ github.run_number }} --push .
 
   RunOnHomePi:
     needs: [GitLabRegistryPush] 
