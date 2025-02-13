@@ -50,7 +50,7 @@ params:
       - name: "Posts"
         url: "post/"
       - name: "Résumé"
-        url: "cdn.prashantnook.in/resume.pdf"
+        url: "https://cdn.prashantnook.in/resume.pdf"
   socialIcons:
     - name: "linkedin"
       url: "https://in.linkedin.com/in/prashantnook"
