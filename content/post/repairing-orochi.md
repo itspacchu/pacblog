@@ -3,7 +3,7 @@ title: "Repairing Orochi V2"
 date: 2024-03-14T16:17:18Z
 draft: false
 cover:
-  image: https://github.com/itspacchu/static_dump/assets/37984032/e4bcda8a-f037-487c-a4bd-7cf12690c538
+  image: https://cdn.prashantnook.in/img/orochi.png
 ---
 
 Greetings Humans,

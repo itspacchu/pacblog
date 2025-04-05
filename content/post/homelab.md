@@ -2,11 +2,7 @@
 title: "Homelab"
 date: 2024-03-23T13:26:33Z
 draft: false
-cover:
-  image: https://github.com/itspacchu/static_dump/assets/37984032/e55bf6d1-bd4c-476b-966b-6ec3d46237ed
 ---
-
-Greetings paclings,
 
 I have been homelabbing since a very long time, ever since I got my `Raspberry Pi 2`.
 

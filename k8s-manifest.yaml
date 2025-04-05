@@ -22,28 +22,12 @@ spec:
       labels:
         app: pacblog
     spec:
-      affinity:
-        nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            nodeSelectorTerms:
-            - matchExpressions:
-              - key: kubernetes.io/hostname
-                operator: In
-                values:
-                - homelab
       containers:
       - image: registry.gitlab.com/itspacchu/pacblog:latest
         imagePullPolicy: Always
         name: pacblog
         ports:
         - containerPort: 80
-        volumeMounts:
-        - name: cdn-volume
-          mountPath: /usr/share/nginx/html/cdn
-      volumes:
-      - name: cdn-volume
-        hostPath:
-          path: /mnt/media/extssd/cdn
 ---
 apiVersion: v1
 kind: Service
@@ -60,6 +44,23 @@ spec:
     targetPort: 80
   selector:
     app: pacblog
-  type: NodePort
-status:
-  loadBalancer: {}
+  type: ClusterIP
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: blog-via-cf-tunnel
+  namespace: blog
+spec:
+  ingressClassName: cloudflare-tunnel
+  rules:
+  - host: prashantnook.in
+    http:
+      paths:
+      - backend:
+          service:
+            name: pacblog-service
+            port:
+              number: 80
+        path: /
+        pathType: Prefix

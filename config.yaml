@@ -43,29 +43,12 @@ params:
     buttons:
       - name: "About"
         url: "/about/"
-      - name: "Projects"
-        url: "/projects/"
       - name: "Posts"
         url: "/post/"
       - name: "Résumé"
         url: "https://cdn.prashantnook.in/resume.pdf"
 
 
-  profileMode:
-    enabled: false
-    title: "Prashant's Nook"
-    subtitle: "Hello fellow earthlings, I see you have stumbled on my website <hr> Here are some places you can go to."
-    imageUrl: "https://avatars.githubusercontent.com/u/37984032"
-    imageTitle: "rip internet!"
-    buttons:
-      - name: "About"
-        url: "/about/"
-      - name: "Projects"
-        url: "/projects/"
-      - name: "Posts"
-        url: "/post/"
-      - name: "Résumé"
-        url: "https://cdn.prashantnook.in/resume.pdf"
   socialIcons:
     - name: "linkedin"
       url: "https://in.linkedin.com/in/prashantnook"
