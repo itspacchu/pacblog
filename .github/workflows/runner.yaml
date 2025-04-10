@@ -21,21 +21,12 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
   GitLabRegistryPush:
-    # needs: [GitlabMirror]
-    runs-on: [self-hosted]
+    runs-on: ubuntu-24.04-arm
     steps:
       - uses: actions/checkout@v1
       - name: Login into docker
-        run: podman login -u itspacchu -p ${{ secrets.GITLAB_PASSWORD }} registry.gitlab.com/itspacchu/pacblog
+        run: docker login -u itspacchu -p ${{ secrets.GITLAB_PASSWORD }} registry.gitlab.com/itspacchu/pacblog
       - name: Build
-        run: podman build -t registry.gitlab.com/itspacchu/pacblog:arm${{ github.run_number }} .
+        run: docker build -t registry.gitlab.com/itspacchu/pacblog:arm${{ github.run_number }} .
       - name: Push image 
-        run: podman push registry.gitlab.com/itspacchu/pacblog:arm${{ github.run_number }}
-
-  RunOnHomePi:
-    needs: [GitLabRegistryPush] 
-    runs-on: [self-hosted]
-    steps:
-      - name: Run Kubernetes manifest on selfhosted machine
-        run: |
-          curl https://raw.githubusercontent.com/itspacchu/pacblog/master/k8s-manifest.yaml | sed "s/latest/arm${{ github.run_number }}/g" | kubectl apply -f -
+        run: docker push registry.gitlab.com/itspacchu/pacblog:arm${{ github.run_number }}
