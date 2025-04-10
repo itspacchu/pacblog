@@ -40,6 +40,10 @@ I have a keen interest in Selfhosting, Gamede, Robotics and tinkering with elect
 
 ### <a href=https://anilist.co/user/pacchu/><div title="Anilist ">&#128279; Anilist</div> </a>
 
+> Updates Live
+
+![anime-is-beautiful](https://api.prashantnook.in/user/pacchu/anime)
+
 ### Music
 
 > Updates Live
