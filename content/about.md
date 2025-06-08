@@ -9,15 +9,15 @@ ShowToc: false
 disableShare: true
 ---
 
-
-![profileboi](https://github.com/user-attachments/assets/5315feb1-d53b-4f96-b158-fe9f199fd226)
+![profileboi](https://cdn.prashantnook.in/img/pacstand.png)
 
 ## <div title="and other hyper intelligent species">**Greeting Eartlings!**</div><br>
 
-Je suis Prashant, The eternal overlord of curiosity and overthinking, Wants a Gopher Plushie cause its cute `>..<`.<br>
+Je suis Prashant (_they/them_), The eternal overlord of curiosity and an epic overthinking, `>..<`<br>
 
-System Administrator/ Devops Engineer with 3 years of experience [Résumé](https://prashantnook.in/cdn/resume.pdf).
-I have a keen interest in Selfhosting, Gamede, Robotics and tinkering with electronics. Loves to explore and travel, Absolutely addicted to Anime and Manga.
+System Administrator/ Devops Engineer with 3 years of experience [Résumé](https://cdn.prashantnook.in/resume.pdf).
+
+I have a keen interest in Selfhosting, Gamedev, Robotics and tinkering with electronics. Loves to explore and travel, Absolutely addicted to Music, Anime and Manga.
 
 <br>Building visualisations and interactive systems for the concepts been taught and watching them in action is the most fun part of building things.
               
@@ -26,7 +26,7 @@ I have a keen interest in Selfhosting, Gamede, Robotics and tinkering with elect
 - Homelabbing/ Selfhosting.
 - Programatical Mathematics.
 - Electronics and Robotics.
-- GameJams.
+- ~GameJams~
 - Cycling.
 - Badminton.
 

@@ -4,28 +4,34 @@ date: 2024-03-14T15:50:12Z
 draft: false
 ---
 
-# Malaysia & Singapore 
+# 2025
+
+# Mumbai & Pune Diaries
+
+{{< youtube PGobYzOOkdg >}}
+
+# Kolkata diaries
+
+{{< youtube 2ebC9jH5muA>}}
+
+
+# 2024
+
+## Malaysia & Singapore 
 
 {{< youtube nsA2USknbQM >}}
-
-
-# Bengaluru
-
-## Bengaluru Diary #1
-
-{{< youtube NITQj8qLEAI >}}
 
 ## Bengaluru Diary #2
 
 {{< youtube S3CV-DvKCPg >}}
 
-# Hyderabad
 
+# 2023
 
-## Shanker
+## Bengaluru Diary #1
+
+{{< youtube NITQj8qLEAI >}}
+
+## Under the Moon? ... Hyderabad
 
 {{< youtube gawOOL8tXJI >}}
-
-## Shazium 
-
-{{< youtube WiJcDfoN3Ws >}}
