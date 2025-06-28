@@ -35,7 +35,7 @@ params:
   ShowCodeCopyButtons: true
   ShowToc: true
   images:
-    - "https://github.com/user-attachments/assets/5315feb1-d53b-4f96-b158-fe9f199fd226"
+    - "https://cdn.prashantnook.in/img/pacstand.png"
 
   homeInfoParams:
     Title: "Prashant's Nook"

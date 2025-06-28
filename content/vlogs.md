@@ -6,6 +6,11 @@ draft: false
 
 # 2025
 
+# Mahabhaleshwar & Pune Diaries
+> Sponsored by infracloud.io
+
+{{< youtube XYoup7e9O2A>}}
+
 # Mumbai & Pune Diaries
 
 {{< youtube PGobYzOOkdg >}}
