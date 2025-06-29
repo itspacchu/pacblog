@@ -6,20 +6,27 @@ draft: false
 
 Greetings Tinkerers!
 
-In the past couple of months I've been tinkering with some cool ways of modifying my homelab and writing k8s operators. As y'all know I am a huge music addict
+In the past couple of months I've been tinkering with some cool ways of modifying my homelab and writing k8s operators. 
+
+Alright so ... as y'all know I am a huge music addict...
 
 (cough!.)
 
 ![music-is-beautiful](https://www.tapmusic.net/collage.php?user=itspacchu&type=1month&size=3x3&caption=true&playcount=true)
 
-Anyhow.. My Spotify Premium ended and looking at the price 1180 INR/year, To be honest not bad.
-But, I wanted to see if I can host my own version of spotify along with alot of things I do to track music and let friends know what I'm listening to.
+... and my Spotify Premium membership just ended _( forgot to create a mandate ... I guess a good thing? )_, while looking to renew I was wondering why don't I just self host something which can replace spotify for me.
 
+I had couple of requirements for me to consider something as a spotify replacement-
+
+- Scrobble things to last.fm
+- Now playing on my discord through rpc
+- Able to add/remove songs easily along with multi device syncing.
+
+Previously, I used to have a single Smb server and used Mixplorer to pull songs to all my devices but ... come on good UI is needed as well and Mixplorer isn't really a music player lol.
 
 ### Navidrome setup
 
 ![navi](https://www.myqnap.org/wp-content/uploads/logo-192x192-2.png)
-
 
 On r/selfhosting, I've come across the very same thing I was looking for [_Navidrome_](https://www.navidrome.org/).
 
