@@ -2,6 +2,8 @@
 title: "Navidrome"
 date: 2025-06-28T20:07:09Z
 draft: false
+cover:
+  image: https://github.com/user-attachments/assets/bb684d4b-fe7d-4367-b4a0-e41f2afe636d
 ---
 
 Greetings Tinkerers!
