@@ -2,8 +2,6 @@
 title: "Microsoft Dev Expedition 2024"
 date: 2024-11-19T22:22:22Z
 draft: false
-cover:
-  image: https://cdn.prashantnook.in/img/microsoft_01.jpg
 ---
 
 Greetings guardians,
