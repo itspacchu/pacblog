@@ -20,32 +20,32 @@ System Administrator/ Devops Engineer with 3 years of experience [Résumé](http
 I have a keen interest in Selfhosting, Gamedev, Robotics and tinkering with electronics. Loves to explore and travel, Absolutely addicted to Music, Anime and Manga.
 
 <br>Building visualisations and interactive systems for the concepts been taught and watching them in action is the most fun part of building things.
-              
+
+---
+
 ### Interests
 
-- Homelabbing/ Selfhosting.
-- Programatical Mathematics.
+- [Homelabbing/ Selfhosting](https://prashantnook.in).
 - Electronics and Robotics.
-- ~GameJams~
+- [~GameJams~](https://pacchu.itch.io/)
 - Cycling.
+- [Vlogging](/vlogs)
 - Badminton.
 
-### <div title="The gift of gods">Interesting Stuff I like</div>
+---
 
-- [Essense of Algebra](https://www.youtube.com/playlist?app=desktop&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+## Additional
 
-- [Book of shaders](https://thebookofshaders.com/)
+### [&#128279; Podcasts](/podcasts)
 
-- [Sebastian Lague](https://www.youtube.com/c/SebastianLague)
+### [&#128279; Anilist](https://anilist.co/user/pacchu)
 
-### <a href=https://anilist.co/user/pacchu/><div title="Anilist ">&#128279; Anilist</div> </a>
+<!-- > Updates Live
 
-> Updates Live
+![anime-is-beautiful](https://api.prashantnook.in/user/pacchu/anime) -->
 
-![anime-is-beautiful](https://api.prashantnook.in/user/pacchu/anime)
+### [&#128279; Music](https://www.last.fm/user/itspacchu)
 
-### Music
-
-> Updates Live
+> Image generated with data from Last.fm API
 
 ![music-is-beautiful](https://www.tapmusic.net/collage.php?user=itspacchu&type=1month&size=5x5&caption=true&playcount=true)
