@@ -1,6 +1,6 @@
 ---
 title: "Podcasts"
-date: 2025-07-9T02:49:07+05:30
+# date: 2025-07-9T02:49:07+05:30
 draft: false
 tag: "podcasts"
 ShowWordCount: false
@@ -8,6 +8,13 @@ ShowRssButtonInSectionTermList: true
 ShowToc: true
 disableShare: false
 ---
+
+<!-- 
++++
+title = "Podcasts"
+menu = "main"
+weight = 20
++++ -->
 
 These are some podcasts I listen to, These are my Park/Leisure listen things which I find entertaining and fun. 
 

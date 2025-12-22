@@ -1,7 +1,7 @@
 ---
-title: "Vlogs"
-date: 2024-03-14T15:50:12Z
-draft: false
+title: "Vlog"
+menu: "main"
+weight: 11
 ---
 
 # 2025

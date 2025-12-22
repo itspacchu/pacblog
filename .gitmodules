@@ -1,12 +1,9 @@
-[submodule "themes/anubis"]
-	path = themes/anubis
-	url = https://github.com/mitrichius/hugo-theme-anubis.git
-[submodule "private"]
-	path = private
-	url = https://github.com/itspacchu/0x45.in
 [submodule "public/projects/webrun"]
 	path = public/projects/webrun
 	url = https://github.com/itspacchu/webprojects
 [submodule "themes/PaperMod-pacblog"]
 	path = themes/PaperMod-pacblog
 	url = https://github.com/itspacchu/pacblog-hugo-PaperMod
+[submodule "themes/hugo-bearblog"]
+	path = themes/hugo-bearblog
+	url = https://github.com/janraasch/hugo-bearblog.git
