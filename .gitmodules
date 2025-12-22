@@ -6,4 +6,4 @@
 	url = https://github.com/itspacchu/hugo-bearblog.git
 [submodule "themes/PaperMod-pacblog"]
 	path = themes/PaperMod-pacblog
-	url = https://github.com/<owner>/PaperMod-pacblog.git
+	url = https://github.com/itspacchu/pacblog-hugo-PaperMod.git
