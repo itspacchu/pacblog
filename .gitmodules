@@ -1,9 +1,9 @@
 [submodule "public/projects/webrun"]
 	path = public/projects/webrun
 	url = https://github.com/itspacchu/webprojects
-[submodule "themes/PaperMod-pacblog"]
-	path = themes/PaperMod-pacblog
-	url = https://github.com/itspacchu/pacblog-hugo-PaperMod
 [submodule "themes/hugo-bearblog"]
 	path = themes/hugo-bearblog
-	url = https://github.com/janraasch/hugo-bearblog.git
+	url = https://github.com/itspacchu/hugo-bearblog.git
+[submodule "themes/PaperMod-pacblog"]
+	path = themes/PaperMod-pacblog
+	url = https://github.com/<owner>/PaperMod-pacblog.git
