@@ -1,7 +1,7 @@
 ---
 title: "Lorentz Attractor"
 date: 2020-02-29T00:22:10+05:30
-draft: false
+draft: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 disableShare: true

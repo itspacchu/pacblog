@@ -5,18 +5,11 @@ draft: false
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 disableShare: true
-cover:
-    image: "https://user-images.githubusercontent.com/37984032/187063985-726e0ae3-dddd-4375-baf9-73e40c492364.png"
 ---
 
 Greetings everyone,
 
 Recently I have been interning as a *Research Intern* at [IIIT Hyderabad](https://www.iiit.ac.in/) in [Smart City Research Center](https://smartcitylivinglab.iiit.ac.in/).
-
-![The logo](https://lh3.googleusercontent.com/k3i2IWxxC4TZ8vaYOlIULqMhfNYNG-3alOo0LZSzCQbeRu5NVjQkTYuA336ydwjaJWYdq1b1UqlRYFowNcqSkk_tHCIVO-sNbpbS9ccEkhvVfN7RBnJ9v9D6bb3oD1g4SgFf7YHMs3w=w2400)
-
-
-```this is the very first photo I took inside.. and yea I know my camera glitched up*```
 
 <br>
 
