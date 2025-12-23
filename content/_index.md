@@ -1,12 +1,6 @@
----
-title: "Home"
-menu: "main"
-weight: 1
----
-
 ![pacstand](https://cdn.pacsui.me/imgs/pac_stand.png)
 
-## <div title="and other hyper intelligent species">. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. **Greeting Wanderers** . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.</div><br>
+## <div title="and other hyper intelligent species">₊ ⊹ . ݁ ⟡ ݁ . ⊹ **Greeting Hitchikkers** ₊ ⊹ . ݁ ⟡ ݁ . ⊹</div><br>
 
 Je suis Prachi (_she_/_her_), The eternal overlord of curiosity and an epic overthinking<br>
 (⸝⸝> ᴗ•⸝⸝)<br>
@@ -19,23 +13,21 @@ I have a keen interest in Selfhosting, Gamedev, Robotics and tinkering with elec
 
 ### Clickies (*ᴗ͈ˬᴗ͈)
 
-- [Homelab](https://pacsui.me).
-- [Vlogs](/vlogs)
-- [Blogs](/blog)
-- Electronics and Robotics.
-- [~GameJams~](https://pacchu.itch.io/)
-- Cycling.
-- Badminton.
+##### [⚲ Homelab](/)
+##### [⚲ Vlogs](/vlogs)
+##### [⚲ Blogs](/blog)
+##### Electronics and Robotics.
+##### [⚲ ~GameJams~](https://pacchu.itch.io/)
+##### Cycling.
+##### Badminton.
 
 ---
 
-## Extras (*ᴗ͈ˬᴗ͈)
+### Extras (*ᴗ͈ˬᴗ͈)
 
-### [⚲ Podcasts](/podcasts)
-
-### [⚲ Anilist](https://anilist.co/user/pacchu)
-
-### [⚲ Music](https://www.last.fm/user/itspacchu)
+##### [⚲ Podcasts](/podcasts)
+##### [⚲ Anilist](https://anilist.co/user/pacchu)
+##### [⚲ Music](https://www.last.fm/user/itspacchu)
 
 > Image generated with data from Last.fm API
 
