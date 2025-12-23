@@ -8,7 +8,7 @@
     "run_worker_first": false
   },
   "build": {
-    "command": "hugo build --gc --minify",
+    "command": "hugo build --gc --minify"
   },
   "workers_dev": true,
   "preview_urls": true
