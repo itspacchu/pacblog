@@ -13,7 +13,7 @@ I have a keen interest in Selfhosting, Gamedev, Robotics and tinkering with elec
 
 ### Clickies (*ᴗ͈ˬᴗ͈)
 
-##### [⚲ Homelab](/)
+##### [⚲ Homelab](/homelab)
 ##### [⚲ Vlogs](/vlogs)
 ##### [⚲ Blogs](/blog)
 ##### Electronics and Robotics.

@@ -43,12 +43,12 @@ The provided [_docker-compose_](https://www.navidrome.org/docs/installation/dock
 
 > Future TODO need to look at backup solutions now!
 
-Now for exposing it publicly we got Cloudflare tunnels. I came across this amazing k8s controller [_STRRL/cloudflare-tunnel-ingress-controller_](https://github.com/STRRL/cloudflare-tunnel-ingress-controller) which lets you have cf-tunnels as Ingress class, This very blog is using cf-tunnels to be exposed to my domain _prashantnook.in_ 
+Now for exposing it publicly we got Cloudflare tunnels. I came across this amazing k8s controller [_STRRL/cloudflare-tunnel-ingress-controller_](https://github.com/STRRL/cloudflare-tunnel-ingress-controller) which lets you have cf-tunnels as Ingress class, This very blog is using cf-tunnels to be exposed to my domain _pacsui.me_ 
 
 ```bash
 pacchu@pacsrv:~$ kubectl get ing -n blog blog-via-cf-tunnel
 NAME                 CLASS               HOSTS             ADDRESS                                                 PORTS   AGE
-blog-via-cf-tunnel   cloudflare-tunnel   prashantnook.in   4f5a42b3-3ce7-4cdc-87c1-813b4e743fdb.cfargotunnel.com   80      35d
+blog-via-cf-tunnel   cloudflare-tunnel   _REDCATED_   4f5a42b3-3ce7-4cdc-87c1-813b4e743fdb.cfargotunnel.com   80      35d
 ```
 
 So yeah pretty handy instead of tinkering with nginx ingress controller and openvpn things that I've been doing previously.

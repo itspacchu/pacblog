@@ -15,10 +15,8 @@ inspired from ʕ´•ᴥ•`ʔσ  https://nownownow.com
 </details>
 
 
-> _Updated on 23rd Dec 2025_
+> _Updated on 27rd Dec 2025_
 
 I recently started working at a new organisation... Still kinda overwhelming as its my first time in a massive MNC omgawsh.
 
-Got an office party tomorrow and I'm gonna go with an eyeliner ω(=＾・＾=)ω
-
-![now](https://cdn.pacsui.me/imgs/irl/now.gif)
+![nowpic](https://cdn.pacsui.me/imgs/irl/now.jpg)
