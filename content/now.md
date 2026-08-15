@@ -13,10 +13,9 @@ Well, Since I no longer have a /about page, /now is where I yap about what I've 
 inspired from ʕ´•ᴥ•`ʔσ  https://nownownow.com
 </details>
 
-> _Updated on 8th July 2026_
+> _Updated on 15th August 2026_
 
-Have mostly calmed down, just overthinking on bunch of things and future on how it'll be. I need to have a talk with my psychiatrist.
-
-![pacpride](https://pub-63132de0d0bd4788949b876a878bc482.r2.dev/blog_imgs/pacpride.jpeg)
+Getting FFS done in Kochi! Will update on the blog post [1f3f3](/1f3f3) soon!
+Scheduled on 3rd Sept 2026!!
 
 Cheers!
