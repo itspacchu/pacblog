@@ -2,6 +2,6 @@
 title = "singapore"
 date = ""
 type = "trip"
-description = "singapore"
+description = "🇸🇬"
 location = ""
 +++

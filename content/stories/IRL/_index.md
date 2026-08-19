@@ -2,6 +2,6 @@
 title = "irl"
 date = ""
 type = "trip"
-description = "irl"
+description = "random selfies and life stuff"
 location = ""
 +++

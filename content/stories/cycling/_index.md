@@ -2,6 +2,6 @@
 title = "cycling"
 date = ""
 type = "trip"
-description = "cycling"
+description = "I cycle around randomly"
 location = ""
 +++
