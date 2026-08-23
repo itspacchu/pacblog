@@ -13,9 +13,12 @@ Well, Since I no longer have a /about page, /now is where I yap about what I've 
 inspired from ʕ´•ᴥ•`ʔσ  https://nownownow.com
 </details>
 
-> _Updated on 15th August 2026_
+> _Updated on 23th August 2026_
 
-Getting FFS done in Kochi! Will update on the blog post [1f3f3](/1f3f3) soon!
-Scheduled on 3rd Sept 2026!!
+Went to Rashtrapathi Nilayam for cycling event! it was... eh okay ish
 
-Cheers!
+<img width="2328" height="1746" alt="pacpi - 00000001" src="https://github.com/user-attachments/assets/24c7272f-6f9e-42b6-bf4b-821ddc2133bb" />
+
+<img width="4080" height="3072" alt="pacpi - 00000002" src="https://github.com/user-attachments/assets/f7b87058-4be0-48c5-b9fc-c8f1f5c03c2d" />
+
+RIP Mavis, you will be forever remembered. The amazing comics you've drawn <3
