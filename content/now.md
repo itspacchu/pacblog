@@ -13,12 +13,9 @@ Well, Since I no longer have a /about page, /now is where I yap about what I've 
 inspired from ʕ´•ᴥ•`ʔσ  https://nownownow.com
 </details>
 
-> _Updated on 23th August 2026_
+> _Updated on 14th October 2026_
 
-Went to Rashtrapathi Nilayam for cycling event! it was... eh okay ish
+Went to Kerala and Bengaluru trip and got amazing gifts from my Aunt and Uncle.
+Met Amara who is a lovely amazing person :D
 
-<img width="100%" height="auto" alt="pacselfie" src="https://github.com/user-attachments/assets/24c7272f-6f9e-42b6-bf4b-821ddc2133bb" />
-
-<img width="100%" height="auto" alt="pacart" src="https://github.com/user-attachments/assets/f7b87058-4be0-48c5-b9fc-c8f1f5c03c2d" />
-
-RIP Mavis, you will be forever remembered. The amazing comics you've drawn <3
+![spookpac](https://cdn.pacsui.me/imgs/irl/spookpac_17m.jpeg)
